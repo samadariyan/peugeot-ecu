@@ -1,0 +1,12 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "bts4175")(type "KiCad")(uri "${KIPRJMOD}/project_lib/bts4175.kicad_sym")(options "")(descr ""))
+  (lib (name "infineon_psu")(type "KiCad")(uri "${KIPRJMOD}/project_lib/infineon_psu.kicad_sym")(options "")(descr ""))
+  (lib (name "lmr14020")(type "KiCad")(uri "${KIPRJMOD}/project_lib/lmr14020.kicad_sym")(options "")(descr ""))
+  (lib (name "max9924")(type "KiCad")(uri "${KIPRJMOD}/project_lib/max9924.kicad_sym")(options "")(descr ""))
+  (lib (name "tle9201_2")(type "KiCad")(uri "${KIPRJMOD}/project_lib/tle9201_2.kicad_sym")(options "")(descr ""))
+  (lib (name "tle9471")(type "KiCad")(uri "${KIPRJMOD}/project_lib/tle9471.kicad_sym")(options "")(descr ""))
+  (lib (name "vnq7140aj")(type "KiCad")(uri "${KIPRJMOD}/project_lib/vnq7140aj.kicad_sym")(options "")(descr ""))
+  (lib (name "vnld5090")(type "KiCad")(uri "${KIPRJMOD}/project_lib/vnld5090.kicad_sym")(options "")(descr ""))
+  (lib (name "sicma_socket")(type "KiCad")(uri "${KIPRJMOD}/project_lib/sicma_socket.kicad_sym")(options "")(descr ""))
+)
