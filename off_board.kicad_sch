@@ -6674,7 +6674,7 @@
 	)
 	(hierarchical_label "B20"
 		(shape passive)
-		(at 97.155 121.285 180)
+		(at 97.155 123.825 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6729,7 +6729,7 @@
 	)
 	(hierarchical_label "A71"
 		(shape passive)
-		(at 113.665 121.285 0)
+		(at 113.665 123.825 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7079,6 +7079,17 @@
 		)
 		(uuid "556b00e9-322c-4e65-9dbf-1cf575c79c50")
 	)
+	(hierarchical_label "A5"
+		(shape passive)
+		(at 113.665 121.285 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "57b054f3-b6d4-4222-8a8b-0d53c5fd3efb")
+	)
 	(hierarchical_label "B83"
 		(shape passive)
 		(at 233.68 128.27 0)
@@ -7092,7 +7103,7 @@
 	)
 	(hierarchical_label "A73"
 		(shape passive)
-		(at 113.03 137.16 0)
+		(at 180.34 98.425 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7114,7 +7125,7 @@
 	)
 	(hierarchical_label "B79"
 		(shape passive)
-		(at 97.155 126.365 180)
+		(at 97.155 128.905 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7309,6 +7320,17 @@
 			(justify right)
 		)
 		(uuid "719282bb-1db7-43fc-9313-106a4e9baabb")
+	)
+	(hierarchical_label "A42"
+		(shape passive)
+		(at 97.155 121.285 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "72831f5e-0678-4e8d-bfa3-5cdedd65a28a")
 	)
 	(hierarchical_label "B80"
 		(shape passive)
@@ -7609,7 +7631,7 @@
 	)
 	(hierarchical_label "A72"
 		(shape passive)
-		(at 113.03 134.62 0)
+		(at 180.34 95.885 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7741,7 +7763,7 @@
 	)
 	(hierarchical_label "A74"
 		(shape passive)
-		(at 98.425 139.7 270)
+		(at 165.735 100.965 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8269,7 +8291,7 @@
 	)
 	(hierarchical_label "B50"
 		(shape passive)
-		(at 97.155 123.825 180)
+		(at 97.155 126.365 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9843,7 +9865,7 @@
 	)
 	(sheet
 		(at 97.155 119.38)
-		(size 16.51 8.89)
+		(size 16.51 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -9867,7 +9889,7 @@
 			)
 		)
 		(property "Sheetfile" "fan_control_AC.kicad_sch"
-			(at 97.155 128.8546 0)
+			(at 97.155 131.3946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9877,7 +9899,7 @@
 			)
 		)
 		(pin "A71" passive
-			(at 113.665 121.285 0)
+			(at 113.665 123.825 0)
 			(uuid "652f02c1-e714-41ca-984b-8dfa818e9b09")
 			(effects
 				(font
@@ -9887,7 +9909,7 @@
 			)
 		)
 		(pin "B20" passive
-			(at 97.155 121.285 180)
+			(at 97.155 123.825 180)
 			(uuid "dbc3e18c-c085-47d8-bbb5-78260cd16fcb")
 			(effects
 				(font
@@ -9897,7 +9919,7 @@
 			)
 		)
 		(pin "B50" passive
-			(at 97.155 123.825 180)
+			(at 97.155 126.365 180)
 			(uuid "0812fca6-5e72-48e4-9a13-c7d5e330a246")
 			(effects
 				(font
@@ -9907,8 +9929,28 @@
 			)
 		)
 		(pin "B79" passive
-			(at 97.155 126.365 180)
+			(at 97.155 128.905 180)
 			(uuid "81aaf8bb-a794-4ca1-a713-7d5980f010a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "A5" passive
+			(at 113.665 121.285 0)
+			(uuid "4dceaf37-59a3-4901-b721-28453e0e2f58")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "A42" passive
+			(at 97.155 121.285 180)
+			(uuid "b449ffb9-3fa0-4d7d-9a35-658841e61f68")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9925,7 +9967,7 @@
 		)
 	)
 	(sheet
-		(at 96.52 132.715)
+		(at 163.83 93.98)
 		(size 16.51 6.985)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9941,7 +9983,7 @@
 		)
 		(uuid "900820c3-35b4-478e-a831-d51193b40c2c")
 		(property "Sheetname" "crank_shaft_pos"
-			(at 96.52 132.0034 0)
+			(at 163.83 93.2684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9950,7 +9992,7 @@
 			)
 		)
 		(property "Sheetfile" "crank_shaft_pos.kicad_sch"
-			(at 96.52 140.2846 0)
+			(at 163.83 101.5496 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9960,7 +10002,7 @@
 			)
 		)
 		(pin "A72" passive
-			(at 113.03 134.62 0)
+			(at 180.34 95.885 0)
 			(uuid "0f3800a7-2a74-4461-a07d-b19b004e1e95")
 			(effects
 				(font
@@ -9970,7 +10012,7 @@
 			)
 		)
 		(pin "A73" passive
-			(at 113.03 137.16 0)
+			(at 180.34 98.425 0)
 			(uuid "ea656411-b5ae-4e7e-a736-03b75dffbe68")
 			(effects
 				(font
@@ -9980,7 +10022,7 @@
 			)
 		)
 		(pin "A74" passive
-			(at 98.425 139.7 270)
+			(at 165.735 100.965 270)
 			(uuid "91dcd752-98ee-4fd3-b35e-e90a00f1c955")
 			(effects
 				(font

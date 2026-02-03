@@ -8834,6 +8834,12 @@
 		(uuid "464833e7-00d7-4a4c-8cae-96e40e9a3552")
 	)
 	(junction
+		(at 136.525 57.785)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a3b29c0-7678-4ed5-a3fe-4e9924910f26")
+	)
+	(junction
 		(at 136.525 42.545)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8850,6 +8856,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9806afe2-b9f4-4981-b2d7-4a0ff7c891fd")
+	)
+	(junction
+		(at 136.525 60.325)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af005cc4-35f4-4ec4-9b7d-89a3edc693df")
 	)
 	(junction
 		(at 136.525 55.245)
@@ -8902,6 +8914,16 @@
 			(type default)
 		)
 		(uuid "6b091e79-953e-4896-932d-c6789c811fde")
+	)
+	(wire
+		(pts
+			(xy 127 57.785) (xy 136.525 57.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ce8c623-d1b2-4884-b1d8-57aba2e80b24")
 	)
 	(wire
 		(pts
@@ -8972,6 +8994,16 @@
 			(type default)
 		)
 		(uuid "bda32731-9db7-43ed-bd82-18993cc68440")
+	)
+	(wire
+		(pts
+			(xy 127 60.325) (xy 136.525 60.325)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e70c30cf-99db-4415-bcc1-26130f125ad3")
 	)
 	(wire
 		(pts
@@ -10684,7 +10716,7 @@
 		(uuid "82a0e6ac-78de-4716-8bad-84e88e3a7e54")
 	)
 	(label "12V_O_1"
-		(at 127 104.14 180)
+		(at 122.555 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10692,6 +10724,17 @@
 			(justify right bottom)
 		)
 		(uuid "b3d2afd7-2677-4999-9db8-62776aebf68e")
+	)
+	(hierarchical_label "AIN_T2"
+		(shape output)
+		(at 127 103.505 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0061bf5d-6c1f-4a38-8522-0e729578980d")
 	)
 	(hierarchical_label "DO_L15"
 		(shape input)
@@ -10715,7 +10758,7 @@
 		)
 		(uuid "0d2329f4-d93b-4d89-a3a6-0412c8e8a957")
 	)
-	(hierarchical_label "AIN_T3"
+	(hierarchical_label "AIN_T4"
 		(shape output)
 		(at 173.99 133.985 0)
 		(effects
@@ -10935,7 +10978,7 @@
 		)
 		(uuid "3336633e-46b1-4da0-bf57-447619bd3be2")
 	)
-	(hierarchical_label "AIN_T2"
+	(hierarchical_label "AIN_T3"
 		(shape output)
 		(at 173.99 42.545 0)
 		(effects
@@ -10945,17 +10988,6 @@
 			(justify left)
 		)
 		(uuid "39705931-0665-4ab8-9a86-b301316c76fa")
-	)
-	(hierarchical_label "AIN_T4"
-		(shape output)
-		(at 173.99 144.145 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "39c58b34-e6a6-41a7-98ab-9a921cb904af")
 	)
 	(hierarchical_label "DO_L_8"
 		(shape input)
