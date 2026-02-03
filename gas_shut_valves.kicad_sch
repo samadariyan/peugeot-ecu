@@ -5,54 +5,36 @@
 	(uuid "5d7885f7-09a8-4299-9940-6cc2b34fd618")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:Galvanometer"
+		(symbol "Elektuur_1:Re"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0.0254)
+				(offset 0)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "MES"
-				(at -3.302 1.016 0)
+			(property "Reference" "Re"
+				(at 0.635 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
-			(property "Value" "Galvanometer"
-				(at -3.302 -0.762 0)
+			(property "Value" "Re"
+				(at 0.635 -3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 0 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Galvanometer"
 				(at 0 0 0)
 				(effects
 					(font
@@ -61,7 +43,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "galvanometer"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -70,246 +52,149 @@
 					(hide yes)
 				)
 			)
-			(symbol "Galvanometer_0_0"
-				(polyline
-					(pts
-						(xy -3.175 -3.175) (xy 3.175 3.175)
+			(property "Description" "operating/relay device/coil; electromagnetic actuator (solenoid)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0)
-						(type default)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=1 2=2"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type none)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "SPICE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Params" "X"
+				(at -2.54 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+					(hide yes)
+				)
+			)
+			(property "Indicator" "+"
+				(at -1.27 3.175 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rating" "V/Ω"
+				(at -0.635 -3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Re X operating relay device coil electromagnetic actuator solenoid"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Re_1_0"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 3.175)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
-				(polyline
-					(pts
-						(xy 1.905 3.175) (xy 3.175 3.175) (xy 3.175 1.905)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 3.175)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
-			(symbol "Galvanometer_0_1"
-				(circle
-					(center 0 0)
-					(radius 2.54)
+			(symbol "Re_1_1"
+				(polyline
+					(pts
+						(xy -3.683 -1.905) (xy 3.683 -1.905) (xy 3.683 1.905) (xy -3.683 1.905) (xy -3.683 -1.905) (xy -3.429 -1.651)
+						(xy -3.429 1.651) (xy 3.429 1.651) (xy 3.429 -1.651) (xy -3.429 -1.651) (xy -3.683 -1.905)
+					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
 					(pts
-						(xy 0.254 3.81) (xy 0.762 3.81)
+						(xy -1.778 -1.778) (xy 1.778 1.778)
 					)
 					(stroke
-						(width 0)
+						(width 0.3556)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
+			)
+			(symbol "Re_1_2"
 				(polyline
 					(pts
-						(xy 0.508 4.064) (xy 0.508 3.556)
+						(xy -3.683 -1.905) (xy 3.683 -1.905) (xy 3.683 1.905) (xy -3.683 1.905) (xy -3.683 -1.905) (xy -3.429 -1.651)
+						(xy -3.429 1.651) (xy 3.429 1.651) (xy 3.429 -1.651) (xy -3.429 -1.651) (xy -3.683 -1.905)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Galvanometer_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Lamp"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.0254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "LA"
-				(at 0.635 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Lamp"
-				(at 0.635 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Lamp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "lamp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Lamp_0_1"
-				(polyline
-					(pts
-						(xy -1.778 1.778) (xy 1.778 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.778 1.778) (xy -1.778 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Lamp_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+						(type outline)
 					)
 				)
 			)
@@ -4359,93 +4244,23 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "0004"
-		(exclude_from_sim yes)
-		(at 147.32 31.115 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "e300d4ab-22e8-4422-8b3b-1bb4a2ce976f")
-	)
 	(junction
-		(at 229.87 54.61)
+		(at 229.87 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "098505c1-64b2-41da-b5ba-b008b77c0069")
+		(uuid "0b457846-bf36-4c14-968f-3d58a4ea4c3a")
 	)
 	(junction
-		(at 229.87 77.47)
+		(at 156.21 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "154265b4-87f3-46d7-ada5-bec068427549")
+		(uuid "189bdeb7-3c92-413a-8fce-7ec8823224b0")
 	)
 	(junction
-		(at 124.46 43.815)
+		(at 229.87 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "165261c6-ce0d-42bd-9524-f917f017c793")
-	)
-	(junction
-		(at 124.46 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e10ffb0-121b-43fe-b399-c850896b7bec")
-	)
-	(junction
-		(at 229.87 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4314da78-d602-4334-bab0-fbedffac38bd")
-	)
-	(junction
-		(at 124.46 85.725)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "586a7391-86c6-4d76-abe1-0c6a8266858d")
-	)
-	(junction
-		(at 229.87 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "62702d07-3355-42ce-bf5c-bf7854342f01")
-	)
-	(junction
-		(at 229.87 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6a1c730b-979e-4ffe-8290-21eda5e1cb3e")
-	)
-	(junction
-		(at 124.46 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "793dac39-d78f-429f-8fe4-b0481d17597e")
-	)
-	(junction
-		(at 229.87 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "797deb19-5aa1-45c9-b7fc-657cc4a27977")
-	)
-	(junction
-		(at 124.46 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "975d4d14-7d0f-4b33-90d3-bfbb5107ea07")
-	)
-	(junction
-		(at 229.87 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cd1a890b-71ee-4b8d-9f93-ae48ebfb564e")
-	)
-	(junction
-		(at 124.46 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f0dd024a-d49e-4b70-b085-287e6ff68552")
+		(uuid "712724b7-cb66-4435-bed6-7f9cfe1bcd6d")
 	)
 	(no_connect
 		(at 83.82 130.81)
@@ -4466,6 +4281,10 @@
 	(no_connect
 		(at 83.82 62.23)
 		(uuid "0f4a573d-360c-46ed-b708-8af69ea7cd2d")
+	)
+	(no_connect
+		(at 229.87 92.71)
+		(uuid "0fa3cfc8-4ce5-41fa-9461-dd2a91073303")
 	)
 	(no_connect
 		(at 229.87 57.15)
@@ -4504,6 +4323,10 @@
 		(uuid "17cabb69-199e-43fa-a569-34b58573636f")
 	)
 	(no_connect
+		(at 229.87 36.83)
+		(uuid "19817bbb-e1be-477c-9118-2ed9b95d54f6")
+	)
+	(no_connect
 		(at 83.82 95.25)
 		(uuid "19f2b97b-c05d-4413-944e-6717ac1900a0")
 	)
@@ -4518,6 +4341,10 @@
 	(no_connect
 		(at 83.82 97.79)
 		(uuid "259110fe-2b21-4f4e-8e27-2cf84ca5aad0")
+	)
+	(no_connect
+		(at 229.87 90.17)
+		(uuid "27afdcf9-f247-4a59-91dd-166d5e4289e7")
 	)
 	(no_connect
 		(at 229.87 85.09)
@@ -4632,16 +4459,12 @@
 		(uuid "832d892e-bd7e-4613-892a-df395f117c0a")
 	)
 	(no_connect
-		(at 229.87 62.23)
-		(uuid "88bc8945-1f09-412c-8e56-fb2b5a4ddea5")
-	)
-	(no_connect
-		(at 229.87 135.89)
-		(uuid "8b9dc458-44ed-46fd-9a45-3e2a040fbff9")
-	)
-	(no_connect
 		(at 229.87 74.93)
 		(uuid "8ed7b0f6-c718-4dda-b42a-9401e3ce3b28")
+	)
+	(no_connect
+		(at 229.87 130.81)
+		(uuid "94f3937a-e20f-46e7-9819-2e2204e922ac")
 	)
 	(no_connect
 		(at 229.87 140.97)
@@ -4660,6 +4483,10 @@
 		(uuid "a2610a8e-b369-4a0a-82d5-fd2dc71da1ce")
 	)
 	(no_connect
+		(at 229.87 49.53)
+		(uuid "a873efcd-6254-4300-bc9d-a6e34f057d10")
+	)
+	(no_connect
 		(at 229.87 95.25)
 		(uuid "aa66d7bd-311c-4bd0-8267-834d230472a9")
 	)
@@ -4672,12 +4499,12 @@
 		(uuid "b12d9a74-c318-47be-9cf9-2d876ee0c774")
 	)
 	(no_connect
-		(at 83.82 64.77)
-		(uuid "b48e8d3a-9528-42a5-90bb-6077fdcb1f60")
+		(at 229.87 54.61)
+		(uuid "b18ffd5a-228a-4892-8712-d509b674edce")
 	)
 	(no_connect
-		(at 229.87 44.45)
-		(uuid "b517269d-89c0-4cc4-8abd-5835e9d358fe")
+		(at 83.82 64.77)
+		(uuid "b48e8d3a-9528-42a5-90bb-6077fdcb1f60")
 	)
 	(no_connect
 		(at 229.87 69.85)
@@ -4688,8 +4515,8 @@
 		(uuid "b8367231-f5ea-4dac-b289-a448ccd85c73")
 	)
 	(no_connect
-		(at 229.87 46.99)
-		(uuid "c003749b-df77-4193-bdc7-c04ca6448e17")
+		(at 229.87 135.89)
+		(uuid "bec845d5-3c3a-4459-9272-a667280c673b")
 	)
 	(no_connect
 		(at 83.82 46.99)
@@ -4710,6 +4537,10 @@
 	(no_connect
 		(at 229.87 133.35)
 		(uuid "cf78c19a-c857-4806-a26a-c74e926dafbe")
+	)
+	(no_connect
+		(at 229.87 62.23)
+		(uuid "d24688b1-b9be-429b-babe-10dc5305e6d0")
 	)
 	(no_connect
 		(at 83.82 128.27)
@@ -4734,6 +4565,10 @@
 	(no_connect
 		(at 83.82 57.15)
 		(uuid "e0c64dc4-9ca1-4f40-97d4-47d4a74d726e")
+	)
+	(no_connect
+		(at 229.87 77.47)
+		(uuid "e4041259-12a4-4bce-b9f1-d9ca2edb7331")
 	)
 	(no_connect
 		(at 83.82 102.87)
@@ -4781,313 +4616,103 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 54.61) (xy 229.87 54.61)
+			(xy 164.465 44.45) (xy 156.21 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0876861b-d2d6-4301-9b74-f0f989a169d1")
+		(uuid "05a03b81-c707-4305-bc26-6240506329f4")
 	)
 	(wire
 		(pts
-			(xy 138.43 130.81) (xy 124.46 130.81)
+			(xy 175.26 59.69) (xy 175.26 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0dddb506-4a35-4419-ae63-5592011d727f")
+		(uuid "2744de05-49ef-4165-acfa-fd96d69e6ad1")
 	)
 	(wire
 		(pts
-			(xy 172.72 43.815) (xy 172.72 49.53)
+			(xy 175.26 46.99) (xy 229.87 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0e33ac21-b3de-4d8f-bebb-29691725526a")
+		(uuid "3d4949a4-0d82-4e17-8dc7-b86bdd191031")
 	)
 	(wire
 		(pts
-			(xy 229.87 36.83) (xy 233.68 36.83)
+			(xy 229.87 44.45) (xy 233.68 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "140175d4-8fed-4a16-9f5f-dc9f1e9347a3")
+		(uuid "637a94eb-3751-4774-8632-5fe16ae7984e")
 	)
 	(wire
 		(pts
-			(xy 124.46 54.61) (xy 124.46 77.47)
+			(xy 156.21 43.18) (xy 156.21 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "29049d16-debe-4337-a36f-1ba59555e921")
+		(uuid "91302bb1-8a18-4664-9fb9-b4bdbbd7f7c8")
 	)
 	(wire
 		(pts
-			(xy 214.63 85.725) (xy 214.63 90.17)
+			(xy 156.21 44.45) (xy 156.21 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "317658ea-e951-44cd-ac86-f8159cb4f5bd")
+		(uuid "9142df1a-c765-4089-97f4-8ede398ab04f")
 	)
 	(wire
 		(pts
-			(xy 229.87 90.17) (xy 233.68 90.17)
+			(xy 156.21 59.69) (xy 164.465 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ff5071a-f77d-4eca-bd23-9623b775c8c5")
+		(uuid "91e7137a-2fb0-4bd5-85e3-d0d7e1fd79e0")
 	)
 	(wire
 		(pts
-			(xy 150.495 92.71) (xy 124.46 92.71)
+			(xy 174.625 44.45) (xy 229.87 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "42c3ee50-baf8-43fa-9d6b-f472c15b0d1c")
+		(uuid "9cf956c9-13d2-4402-9da2-dc94fe0408e2")
 	)
 	(wire
 		(pts
-			(xy 229.87 130.81) (xy 233.68 130.81)
+			(xy 174.625 59.69) (xy 175.26 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4a390db6-fc88-47c1-a8bc-e9af11960c1f")
+		(uuid "b26d8091-3572-486e-914e-768521adda97")
 	)
 	(wire
 		(pts
-			(xy 160.655 92.71) (xy 229.87 92.71)
+			(xy 233.68 46.99) (xy 229.87 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54372a2c-175a-492d-a49b-264170a1a74d")
-	)
-	(wire
-		(pts
-			(xy 160.655 77.47) (xy 229.87 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67c6265a-775c-4479-8f03-3565601ccf6f")
-	)
-	(wire
-		(pts
-			(xy 124.46 130.81) (xy 124.46 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "694ac752-d377-422a-8505-f83845a89457")
-	)
-	(wire
-		(pts
-			(xy 142.875 85.725) (xy 214.63 85.725)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bd1857d-fee8-4cb7-a47c-5d534f83033d")
-	)
-	(wire
-		(pts
-			(xy 229.87 49.53) (xy 233.68 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f835d0e-d481-4e15-8fdc-0a85f0789f1f")
-	)
-	(wire
-		(pts
-			(xy 229.87 77.47) (xy 233.68 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7276ea0c-b4c7-40fe-bd5f-71931cda4c40")
-	)
-	(wire
-		(pts
-			(xy 175.26 36.83) (xy 124.46 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f9d2e00-a4b3-4fdd-8ba3-99c7f30029cc")
-	)
-	(wire
-		(pts
-			(xy 229.87 54.61) (xy 233.68 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85d85829-266f-4a12-951f-fc0556cc136c")
-	)
-	(wire
-		(pts
-			(xy 124.46 36.83) (xy 124.46 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a806667-3441-4fd9-a2e2-df60c862774f")
-	)
-	(wire
-		(pts
-			(xy 151.13 54.61) (xy 124.46 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ef2f094-21a1-4388-adb8-00797c56ceb1")
-	)
-	(wire
-		(pts
-			(xy 229.87 92.71) (xy 233.68 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95445be5-12f4-4d4a-9b7b-b8801d84f828")
-	)
-	(wire
-		(pts
-			(xy 151.13 43.815) (xy 124.46 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9821b4ff-806d-4a0a-87b5-fc7a57927e3f")
-	)
-	(wire
-		(pts
-			(xy 124.46 43.815) (xy 124.46 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99495751-04ee-4b35-bd99-27bc83a24cfc")
-	)
-	(wire
-		(pts
-			(xy 148.59 130.81) (xy 229.87 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a256dd79-bf87-4aba-a850-53fb5e3ad9f5")
-	)
-	(wire
-		(pts
-			(xy 124.46 77.47) (xy 150.495 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a905a1ab-d85c-4956-9c48-0bece2f72ff0")
-	)
-	(wire
-		(pts
-			(xy 124.46 85.725) (xy 124.46 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa595051-1169-4268-8f6b-77bf96dc07a2")
-	)
-	(wire
-		(pts
-			(xy 185.42 36.83) (xy 229.87 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1ef1d9a-e0eb-4774-bfb1-074b7b9b4d16")
-	)
-	(wire
-		(pts
-			(xy 124.46 77.47) (xy 124.46 85.725)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b936cf70-f7f1-44f9-bed8-e3eb6e30d9cc")
-	)
-	(wire
-		(pts
-			(xy 172.72 49.53) (xy 229.87 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baaed5d4-7450-4a02-8d62-1212fd165217")
-	)
-	(wire
-		(pts
-			(xy 214.63 90.17) (xy 229.87 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdbd011d-f39b-42af-87e7-720c9056f8b1")
-	)
-	(wire
-		(pts
-			(xy 161.29 43.815) (xy 172.72 43.815)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4f1830a-8d28-4d31-93f1-eab8fc2021ac")
-	)
-	(wire
-		(pts
-			(xy 132.715 85.725) (xy 124.46 85.725)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fae77ddb-7e16-4a65-822f-63e69ee1ca87")
+		(uuid "d366033b-5d06-42e4-aa5c-82305a5323ba")
 	)
 	(table
 		(column_count 1)
@@ -5366,286 +4991,6 @@
 					(justify left)
 				)
 				(uuid "46bba65b-d9ff-4274-9818-37c8f7365a22")
-			)
-		)
-	)
-	(table
-		(column_count 1)
-		(border
-			(external yes)
-			(header yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(separators
-			(rows yes)
-			(cols yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(column_widths 42.545)
-		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54
-			2.54 2.54 2.54
-		)
-		(cells
-			(table_cell "TMAP sensor GND"
-				(exclude_from_sim no)
-				(at 239.268 27.94 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "d7bf2aa3-a14a-4817-90ac-01adf34fee8f")
-			)
-			(table_cell "TMAP sensor Signal2"
-				(exclude_from_sim no)
-				(at 239.268 30.48 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "27ca6886-3164-4c04-94a3-96a00e7b1c24")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 33.02 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "2de1008b-b71a-428f-8166-ece9a3756765")
-			)
-			(table_cell "CNG-PWM"
-				(exclude_from_sim no)
-				(at 239.268 35.56 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "efd4f132-bd38-4af1-ace7-75cf80c4d816")
-			)
-			(table_cell "FAN HIGH (DO LO)"
-				(exclude_from_sim no)
-				(at 239.268 38.1 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "0c72f658-fba8-45b6-82ad-c043a732106e")
-			)
-			(table_cell "Upstream Oxygen Sensor GND"
-				(exclude_from_sim no)
-				(at 239.268 40.64 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "8801cc05-dca9-4f95-90e1-b92f81e1a202")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 43.18 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "bd8d7303-57c2-40f7-afe4-757837bfec76")
-			)
-			(table_cell "Shut off valve at PCD (11W) ?(DO LO)"
-				(exclude_from_sim no)
-				(at 239.268 45.72 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "fb9b52d6-bf36-4f01-88e5-b585ca9f3ae8")
-			)
-			(table_cell "Hot Warning Lamp (DO LO)"
-				(exclude_from_sim no)
-				(at 239.268 48.26 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "58a7af34-27a5-4475-bc43-bb983e31635b")
-			)
-			(table_cell "Canistor Purge Solenoid valve (DO LO)"
-				(exclude_from_sim no)
-				(at 239.268 50.8 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "8236cf1f-65d6-40f0-bcd5-1a1775aaaa2f")
-			)
-			(table_cell "Check Engine Lamp (DO LO)"
-				(exclude_from_sim no)
-				(at 239.268 53.34 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "4739354a-847d-4983-b9df-4ff261984512")
-			)
-			(table_cell "Main Relay (DO LO)"
-				(exclude_from_sim no)
-				(at 239.268 55.88 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "ef3d96b6-c8a8-4843-82ba-db5c0607347a")
-			)
-			(table_cell "Chassis (Ground) (2.0)"
-				(exclude_from_sim no)
-				(at 239.268 58.42 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "46557c31-fb34-46a0-8af3-ff7f970d7821")
-			)
-			(table_cell "Ignition key (rom junction: 0.5)(DI ?)"
-				(exclude_from_sim no)
-				(at 239.268 60.96 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "17c8ff20-79a7-439a-9694-65b75796a2d7")
-			)
-			(table_cell "Battery terminal(+) (1.0)"
-				(exclude_from_sim no)
-				(at 239.268 63.5 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "3efd875e-2025-41bc-84b4-e669e12d1b91")
 			)
 		)
 	)
@@ -6003,7 +5348,7 @@
 				)
 				(uuid "c6f07ed8-a151-408e-a5e0-bd7555d9c3e7")
 			)
-			(table_cell "CNG Fuel Type Lamp"
+			(table_cell "Fuel Type Indication Lamp (DO LO)"
 				(exclude_from_sim no)
 				(at 239.268 76.073 0)
 				(size 42.545 2.54)
@@ -6088,7 +5433,7 @@
 				)
 				(uuid "42b7e29a-6864-464c-a028-08141fbb849e")
 			)
-			(table_cell "Gasoline-PWM"
+			(table_cell "FTL_PWM"
 				(exclude_from_sim no)
 				(at 239.268 88.773 0)
 				(size 42.545 2.54)
@@ -6105,7 +5450,7 @@
 				)
 				(uuid "dd0e5767-7d96-48bd-b36d-a7343bd4f286")
 			)
-			(table_cell "Tacho Output"
+			(table_cell "ESS"
 				(exclude_from_sim no)
 				(at 239.268 91.313 0)
 				(size 42.545 2.54)
@@ -6770,355 +6115,327 @@
 			)
 		)
 	)
-	(label "426"
-		(at 229.87 92.71 180)
+	(table
+		(column_count 1)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 42.545)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54
+			2.54 2.54 2.54
+		)
+		(cells
+			(table_cell "TMAP sensor GND"
+				(exclude_from_sim no)
+				(at 239.268 27.94 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "d7bf2aa3-a14a-4817-90ac-01adf34fee8f")
+			)
+			(table_cell "TMAP sensor Signal2"
+				(exclude_from_sim no)
+				(at 239.268 30.48 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "27ca6886-3164-4c04-94a3-96a00e7b1c24")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 33.02 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "2de1008b-b71a-428f-8166-ece9a3756765")
+			)
+			(table_cell "CNG_FTL_PWM"
+				(exclude_from_sim no)
+				(at 239.268 35.56 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "efd4f132-bd38-4af1-ace7-75cf80c4d816")
+			)
+			(table_cell "FAN HIGH (DO LO)"
+				(exclude_from_sim no)
+				(at 239.268 38.1 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "0c72f658-fba8-45b6-82ad-c043a732106e")
+			)
+			(table_cell "Upstream Oxygen Sensor GND"
+				(exclude_from_sim no)
+				(at 239.268 40.64 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "8801cc05-dca9-4f95-90e1-b92f81e1a202")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 43.18 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "bd8d7303-57c2-40f7-afe4-757837bfec76")
+			)
+			(table_cell "Shut off valve at PCD (11W) ?(DO LO)"
+				(exclude_from_sim no)
+				(at 239.268 45.72 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "fb9b52d6-bf36-4f01-88e5-b585ca9f3ae8")
+			)
+			(table_cell "Hot Warning Lamp (DO LO)"
+				(exclude_from_sim no)
+				(at 239.268 48.26 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "58a7af34-27a5-4475-bc43-bb983e31635b")
+			)
+			(table_cell "Canistor Purge Solenoid valve (DO LO)"
+				(exclude_from_sim no)
+				(at 239.268 50.8 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "8236cf1f-65d6-40f0-bcd5-1a1775aaaa2f")
+			)
+			(table_cell "Check Engine Lamp (DO LO)"
+				(exclude_from_sim no)
+				(at 239.268 53.34 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "4739354a-847d-4983-b9df-4ff261984512")
+			)
+			(table_cell "Main Relay (DO LO)"
+				(exclude_from_sim no)
+				(at 239.268 55.88 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "ef3d96b6-c8a8-4843-82ba-db5c0607347a")
+			)
+			(table_cell "Chassis (Ground) (2.0)"
+				(exclude_from_sim no)
+				(at 239.268 58.42 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "46557c31-fb34-46a0-8af3-ff7f970d7821")
+			)
+			(table_cell "Ignition key (rom junction: 0.5)(DI ?)"
+				(exclude_from_sim no)
+				(at 239.268 60.96 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "17c8ff20-79a7-439a-9694-65b75796a2d7")
+			)
+			(table_cell "Battery terminal(+) (1.0)"
+				(exclude_from_sim no)
+				(at 239.268 63.5 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "3efd875e-2025-41bc-84b4-e669e12d1b91")
+			)
+		)
+	)
+	(label "183"
+		(at 229.87 44.45 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "3d75ec15-eeba-44cf-b820-a4f0ce4268a7")
+		(uuid "8c14d4ad-8ba0-4751-8bd2-b48d47a39359")
 	)
-	(label "1255"
-		(at 229.87 90.17 180)
+	(label "1313"
+		(at 229.87 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "5add7cf7-13dd-4307-8263-670047261229")
+		(uuid "fcdb3f34-1356-4ea6-80c5-1a3ba319e53d")
 	)
-	(label "Provision"
-		(at 229.87 130.81 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a393dea6-65ba-4828-8aa1-b20eefd5b764")
-	)
-	(label "405"
-		(at 229.87 49.53 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a3951342-e0ea-422f-874e-112e05fe5032")
-	)
-	(label "1245A"
-		(at 229.87 36.83 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b3aaf521-51ca-4f22-9c21-9404955b2a3e")
-	)
-	(label "480"
-		(at 229.87 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d2b2e50d-0b5d-4e2b-86ee-1af2ca723f76")
-	)
-	(label "1215"
-		(at 229.235 77.47 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e77e05d6-53bf-4239-abbe-faefaf4da2f6")
-	)
-	(hierarchical_label "B54"
+	(hierarchical_label "B22"
 		(shape passive)
-		(at 233.68 90.17 0)
+		(at 233.68 44.45 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "4934074d-f8cc-4421-a6cd-7f3dc5bd431d")
+		(uuid "3cf0b1dd-2caa-4be4-b9a3-56a4f0742dd3")
 	)
-	(hierarchical_label "B19"
+	(hierarchical_label "B23"
 		(shape passive)
-		(at 233.68 36.83 0)
+		(at 233.68 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "63425aad-b614-48f3-a940-92c94559e9c1")
-	)
-	(hierarchical_label "B55"
-		(shape passive)
-		(at 233.68 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9872c5c8-5813-4c41-825c-f4fe4980e41a")
-	)
-	(hierarchical_label "B49"
-		(shape passive)
-		(at 233.68 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a1fd150d-3a91-4226-ad2d-6437a7836ad9")
-	)
-	(hierarchical_label "B26"
-		(shape passive)
-		(at 233.68 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bbd028a0-a6f0-4be3-95c8-b1bcdc9611d9")
-	)
-	(hierarchical_label "B24"
-		(shape passive)
-		(at 233.68 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c07758df-f5d7-486d-9a01-0e42d5c285d4")
-	)
-	(hierarchical_label "B84"
-		(shape passive)
-		(at 233.68 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "e1b9fa01-a97e-498e-88fc-d3d781e4f675")
-	)
-	(symbol
-		(lib_id "Device:Lamp")
-		(at 156.21 54.61 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "23fd3be0-a98d-41d7-a4f7-677112872c8f")
-		(property "Reference" "V1"
-			(at 156.2099 50.8 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Check Engine-MIL"
-			(at 156.2099 59.055 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 54.61 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Lamp"
-			(at 156.21 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "50897ff5-a4a2-4f41-9490-99bada7d74bc")
-		)
-		(pin "1"
-			(uuid "ca0cc7f9-0089-4d96-8a7c-720042adb351")
-		)
-		(instances
-			(project "peugeot"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "V1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Galvanometer")
-		(at 155.575 92.71 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4335246e-acfe-497a-b341-becd3c955bb1")
-		(property "Reference" "_3"
-			(at 155.7655 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Tr/mn"
-			(at 155.7655 97.155 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.035 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.035 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Galvanometer"
-			(at 155.575 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "eb522241-2f92-45c1-bdf7-c10dc880d90e")
-		)
-		(pin "1"
-			(uuid "d9dc461a-4289-4c0c-adcd-a8c9b181666f")
-		)
-		(instances
-			(project ""
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "_3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Lamp")
-		(at 156.21 43.815 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "5c37610e-1996-455d-90a7-d19104d440e4")
-		(property "Reference" "LA2"
-			(at 154.9399 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "High Temp"
-			(at 156.2099 47.625 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 43.815 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 43.815 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Lamp"
-			(at 156.21 43.815 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8fd82178-e61f-4f80-baa4-198d7b8c8163")
-		)
-		(pin "1"
-			(uuid "c11bf50a-6a93-4214-9206-63288bcbfd22")
-		)
-		(instances
-			(project "peugeot"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "LA2")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "bdb7d9f6-347f-4d7d-92d7-6969504684e3")
 	)
 	(symbol
 		(lib_id "sicma_socket:Conn_01x90_3Row_Socket")
@@ -7129,8 +6446,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7841be73-cfe5-4b8e-913f-1412c88612f4")
-		(property "Reference" "J21"
+		(uuid "0fe5ef51-a5ae-4f53-9458-1a7bc32e8577")
+		(property "Reference" "J29"
 			(at 79.502 26.6064 0)
 			(effects
 				(font
@@ -7177,139 +6494,139 @@
 			)
 		)
 		(pin "1"
-			(uuid "62c80e2a-82ca-400a-a33c-6aa9c431a0a0")
+			(uuid "d6cfb9f6-e9d4-43b5-8352-029ff46794ec")
 		)
 		(pin "2"
-			(uuid "b6331891-1512-435a-975b-a1bef18a0863")
+			(uuid "a3f6d32f-c8b3-4b1d-b8df-a4d2a810843c")
 		)
 		(pin "3"
-			(uuid "7d23a8c3-1221-4c85-9d5d-27129eedf410")
+			(uuid "868a9803-4500-411e-9fc6-1ddd96653d9d")
 		)
 		(pin "4"
-			(uuid "d49b9b57-6402-484d-bed0-1ef038135153")
+			(uuid "a2f044ff-eeb4-4476-aac4-5a1e26133c97")
 		)
 		(pin "5"
-			(uuid "ee9d4df3-058f-4350-9ce8-de185052b200")
+			(uuid "897e3567-a87d-4703-b2e5-6b0b2a81d8d2")
 		)
 		(pin "6"
-			(uuid "ca0f9836-7281-41f3-916e-89f67e496473")
+			(uuid "6e1d53f0-f443-4287-ae3a-b04e8e26e83f")
 		)
 		(pin "7"
-			(uuid "520373f2-6e45-429d-becf-1c72fadc2d34")
+			(uuid "ef47ceb4-18b0-48c0-83e3-0882db379e50")
 		)
 		(pin "8"
-			(uuid "34b68f4d-11f3-440e-a184-5ed124de0f60")
+			(uuid "51cd6b4b-8127-4551-bac3-f62b97969694")
 		)
 		(pin "9"
-			(uuid "041f8c26-a75a-468d-ad71-273fd52862c7")
+			(uuid "40023bd1-3994-4237-beec-6f839f199790")
 		)
 		(pin "10"
-			(uuid "7e75e41b-e92e-418a-b0c1-f87e4808eb67")
+			(uuid "b1955624-f81c-445b-b394-c047c61b1f29")
 		)
 		(pin "11"
-			(uuid "b2600824-9d9c-4eb9-b0e2-90fd89ddc642")
+			(uuid "22efeb2c-e3bf-417e-b971-7b6345c56a37")
 		)
 		(pin "12"
-			(uuid "d0c57b78-b8aa-472b-8571-bf053ad2cc53")
+			(uuid "79fd1841-5202-4b3f-99ca-4ececd3e387e")
 		)
 		(pin "13"
-			(uuid "fe83fed6-f4ab-4528-be8d-c59b995be9c6")
+			(uuid "9043c32d-78d3-453a-91d7-6e9adfed5ca2")
 		)
 		(pin "14"
-			(uuid "08f21eda-8910-4ac1-9104-d93ef8a93479")
+			(uuid "abc68f15-b095-4adc-86f2-130c391da7cf")
 		)
 		(pin "15"
-			(uuid "2a38d586-ecd6-4ed3-8973-c22121941dc3")
+			(uuid "10a8137a-84d4-472f-a926-4fd53ed93e21")
 		)
 		(pin "31"
-			(uuid "f3f04793-52b0-4909-b40a-22fea3b3e2e0")
+			(uuid "b3e271ee-6113-4794-880e-bbc1b642a9c7")
 		)
 		(pin "32"
-			(uuid "31bbb6af-c8d7-4f37-b1c7-0ce75356d9e9")
+			(uuid "c4629eab-e573-4740-a372-628d4c80e2a1")
 		)
 		(pin "33"
-			(uuid "684e1a7e-3d29-4b78-8ead-b442ab087f33")
+			(uuid "e793b012-029b-4641-ae0a-69b8c36ae54c")
 		)
 		(pin "34"
-			(uuid "126c1de4-6a00-4b1b-bed4-3f945d40fa7a")
+			(uuid "bf09d0d8-c493-470b-898a-e3a7fd90e0b3")
 		)
 		(pin "35"
-			(uuid "5f7255a4-10ba-43ba-8133-e71582cbcd09")
+			(uuid "10117e49-ca7b-4f4a-b4c9-1d7d56a738ef")
 		)
 		(pin "36"
-			(uuid "5267d914-1b47-40f7-93c7-9898bfb4f72a")
+			(uuid "ee6bce5d-febe-410b-b383-d5160d6497e6")
 		)
 		(pin "37"
-			(uuid "6adce02b-0ea9-4ac2-b2c3-df876b48b01c")
+			(uuid "64ff4441-2f29-4c02-b9b9-e24fb1cc418c")
 		)
 		(pin "38"
-			(uuid "ac3f1574-8451-49ac-b3db-cae0d676935e")
+			(uuid "e38b8fbb-3cab-4b83-847f-c0310c34f756")
 		)
 		(pin "39"
-			(uuid "b5bb20c5-e84e-4b72-99dd-732166b6cd06")
+			(uuid "faf88949-5636-4d61-bb36-754e56a65131")
 		)
 		(pin "40"
-			(uuid "49c4bcca-885f-44b6-963d-546363110f0d")
+			(uuid "6f0d312a-63d5-419e-afd2-7bc870ff16c6")
 		)
 		(pin "41"
-			(uuid "2c96c280-435d-45df-a174-ab3925cc2936")
+			(uuid "093baf41-7d00-4bd5-849d-9ca2f3dec755")
 		)
 		(pin "42"
-			(uuid "a7ba3c5a-1de7-4f86-b4b7-2498164f1bf6")
+			(uuid "b98c90c2-2c01-4162-b0eb-aa7f6175f27f")
 		)
 		(pin "43"
-			(uuid "10303f35-193d-41fa-9a35-ba02a8f9b37e")
+			(uuid "10d2fc7a-f390-49eb-8501-3975e4c82146")
 		)
 		(pin "44"
-			(uuid "7a25ee7a-593a-4fa4-b398-f63775076c7f")
+			(uuid "1aabe855-c832-44ff-960e-41201ead6c34")
 		)
 		(pin "45"
-			(uuid "28b7b6de-d30a-42b6-bfed-33579ab3a3f3")
+			(uuid "ad351d65-748e-4645-9157-8be6057b8ebc")
 		)
 		(pin "61"
-			(uuid "8377fd4d-864c-4618-bf33-7659d87baf8d")
+			(uuid "188fda3a-6c05-43d0-a790-a70c957bbddd")
 		)
 		(pin "62"
-			(uuid "72d8ffc4-193f-4bf8-8402-7a2c69a2f466")
+			(uuid "4ad2edfd-7184-440b-92ec-2f1b23ce7a98")
 		)
 		(pin "63"
-			(uuid "cb55ced5-bc86-4aa5-a9fe-59428d0b7a34")
+			(uuid "ccf53042-9474-4882-a7db-9b1ea9add956")
 		)
 		(pin "64"
-			(uuid "e5ac3909-48bb-4f34-b651-beb194d9b83a")
+			(uuid "a28a50ed-6080-4a2b-87e4-e0bf8cbb0dac")
 		)
 		(pin "65"
-			(uuid "68d22db5-b765-4c0e-bf32-8a14d84f24d5")
+			(uuid "1bab47cb-6178-46ad-b88f-68e5ea8649c3")
 		)
 		(pin "66"
-			(uuid "e3331b7b-205a-4f98-971f-e0589535ceed")
+			(uuid "7624e0cf-ade3-4298-b111-c239c7187216")
 		)
 		(pin "67"
-			(uuid "0e06e0e9-4c19-4194-a95f-f5cb8a762983")
+			(uuid "9bd0a134-28b5-4e42-ad66-bcc168f5c4f1")
 		)
 		(pin "68"
-			(uuid "af11f0d8-cb3c-4185-b2fb-732b3c10d29b")
+			(uuid "66bcf10c-a046-40ef-8a61-cce0f9335f73")
 		)
 		(pin "69"
-			(uuid "feb96975-28a1-4cd4-afa7-db4e8000154b")
+			(uuid "b87a67e2-fe67-43ef-b29e-47fb1d88fbae")
 		)
 		(pin "70"
-			(uuid "ee0a1c13-2a60-4c59-b2ec-584acf2a90cc")
+			(uuid "1a4031eb-e309-4dda-8bc7-1b88f36ed4a3")
 		)
 		(pin "71"
-			(uuid "97ba2599-13dc-4bc7-8448-bd9ef62e0036")
+			(uuid "18e1ad23-7084-4de2-af0f-64b94a05bb96")
 		)
 		(pin "72"
-			(uuid "3bbe271e-79e2-4ca6-94bf-a272378b587f")
+			(uuid "b2a14ce3-68c6-489d-b02f-341f4ea0475f")
 		)
 		(pin "73"
-			(uuid "b5776626-c848-4b19-b264-08508f0947b9")
+			(uuid "2cc6e459-2cf7-4482-9c83-41e7a32786cf")
 		)
 		(pin "74"
-			(uuid "6dd99a34-d9c3-42d8-b921-215fa72eba29")
+			(uuid "46a71d68-90ad-4c54-b589-b66c0b6d6bf4")
 		)
 		(pin "75"
-			(uuid "98e9a554-b09f-44e9-af50-28010ace8b94")
+			(uuid "3f7100cc-496a-4d31-b985-15da0345cb57")
 		)
 		(pin "16"
 			(uuid "0d7e333c-327c-4407-888c-30d77a3dbfa6")
@@ -7447,9 +6764,259 @@
 			(uuid "88a78c54-565f-47fc-87d1-3e0d6b4785ab")
 		)
 		(instances
-			(project "peugeot"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "J21")
+			(project "peugeot-ecu"
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/cbab4180-f96c-40d4-a72a-2e8d7ebd54d7"
+					(reference "J29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Elektuur_1:Re")
+		(at 169.545 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "2b04e778-3802-4746-a748-abf56198f826")
+		(property "Reference" "Re12"
+			(at 170.8151 64.135 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "PCD Valve"
+			(at 169.5451 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 169.545 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 169.545 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "operating/relay device/coil; electromagnetic actuator (solenoid)"
+			(at 169.545 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2"
+			(at 169.545 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 169.545 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "X"
+			(at 172.72 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Indicator" "+"
+			(at 172.72 58.42 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "V/Ω"
+			(at 166.37 59.055 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Unit Tag" "1803"
+			(at 169.545 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2f5a624b-4c35-4573-bb56-6347f5477e7e")
+		)
+		(pin "2"
+			(uuid "d32b2d1c-b054-4729-8da9-558ca9c8162b")
+		)
+		(instances
+			(project "peugeot-ecu"
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/cbab4180-f96c-40d4-a72a-2e8d7ebd54d7"
+					(reference "Re12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Elektuur_1:Re")
+		(at 169.545 44.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "c4de933f-8748-4b55-83e3-40e5edc8bb3b")
+		(property "Reference" "Re11"
+			(at 170.8151 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "Regulator Valve"
+			(at 169.5451 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 169.545 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 169.545 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "operating/relay device/coil; electromagnetic actuator (solenoid)"
+			(at 169.545 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2"
+			(at 169.545 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 169.545 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "X"
+			(at 172.72 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Indicator" "+"
+			(at 172.72 43.18 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "V/Ω"
+			(at 166.37 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Unit Tag" "1849"
+			(at 169.545 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cc79834e-1afc-4579-9003-85d6c9af350b")
+		)
+		(pin "2"
+			(uuid "4efe2f02-95d5-48f9-94f5-71673bd11808")
+		)
+		(instances
+			(project "peugeot-ecu"
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/cbab4180-f96c-40d4-a72a-2e8d7ebd54d7"
+					(reference "Re11")
 					(unit 1)
 				)
 			)
@@ -7463,8 +7030,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "91820f7e-95a1-4bea-9011-edc21463bcc6")
-		(property "Reference" "J21"
+		(uuid "e89e496e-dffb-4f27-923e-944c1e56c128")
+		(property "Reference" "J29"
 			(at 235.712 26.797 0)
 			(effects
 				(font
@@ -7644,229 +7211,160 @@
 			(uuid "43327fa9-86f5-4df1-b33c-90cacf019696")
 		)
 		(pin "16"
-			(uuid "34bc5572-8572-46a4-93c2-71de5e90a7dd")
+			(uuid "3e9103dc-1db3-4d7d-950a-566aad2812d8")
 		)
 		(pin "17"
-			(uuid "5f9d7204-19cc-473e-b0ce-c2f1cbb13eb5")
+			(uuid "5b955eb0-c3c3-4aa7-8b65-a55a9b849e84")
 		)
 		(pin "18"
-			(uuid "e651303c-be60-46ba-b25f-eb9e8f3ed1f4")
+			(uuid "02f01018-9123-4614-b52b-8d1d0a7dd926")
 		)
 		(pin "19"
-			(uuid "b1a83d72-ccb3-4e18-b923-1052e7f38d6d")
+			(uuid "e58ee8f1-0ee8-4fea-9c48-fa4416587a77")
 		)
 		(pin "20"
-			(uuid "674f6119-df43-4392-94ac-e22ab4b06524")
+			(uuid "c54b2476-c48a-490e-9caf-8789b9ceb6b1")
 		)
 		(pin "21"
-			(uuid "1d24c958-1333-4175-a2de-f0241e54203b")
+			(uuid "41550a3d-ceb3-4f29-a55e-fa5183bacb72")
 		)
 		(pin "22"
-			(uuid "24c02458-9c64-4995-8aa7-4fc62467cf30")
+			(uuid "1978e966-e230-4ba5-b2d2-3fd183262e65")
 		)
 		(pin "23"
-			(uuid "2e4a209d-2d48-4edc-8a48-9edd8ea24817")
+			(uuid "a092b96c-4920-4c72-bff3-50012f51838d")
 		)
 		(pin "24"
-			(uuid "4fb2eb33-af05-4e73-97b4-ae06da1b5581")
+			(uuid "46954215-ce98-4c26-a330-256e47a66a78")
 		)
 		(pin "25"
-			(uuid "3c4d76a5-4643-4f30-bb63-b65ab461599a")
+			(uuid "fc496a80-1e4b-425d-9c15-9d80d2d849c2")
 		)
 		(pin "26"
-			(uuid "7a00cc05-9760-44dc-b7eb-0f693914a7a3")
+			(uuid "4859cb4f-aa51-491d-8331-378c5d8d0aff")
 		)
 		(pin "27"
-			(uuid "7d4d4966-9378-4d18-8c80-18ee61c3ec8f")
+			(uuid "9a566e57-9084-4cc2-b46d-c73a6aa751b6")
 		)
 		(pin "28"
-			(uuid "4d87cc96-a44f-48f7-ad75-d2dfe4ae2fd8")
+			(uuid "3b0118c2-e4ac-42f3-8d4e-f5638b2baf19")
 		)
 		(pin "29"
-			(uuid "17c1f618-ae3b-4d67-807e-702148a56391")
+			(uuid "3c86af12-d139-4384-bc52-13f956ba8fcf")
 		)
 		(pin "30"
-			(uuid "3a437453-65b7-42b9-85b7-4b3c5a4f6e54")
+			(uuid "42d5aa35-6c83-413a-98b1-74cc111a8fe8")
 		)
 		(pin "46"
-			(uuid "a2726d1a-75d7-483d-9ce9-b53cd580547b")
+			(uuid "1bb463bb-9089-48e8-a22b-b09b4a3c959e")
 		)
 		(pin "47"
-			(uuid "2423f1a8-bd8e-4c19-8d73-fd9ce5c64fd8")
+			(uuid "4c16e653-c03a-4e76-b984-773870b89ea6")
 		)
 		(pin "48"
-			(uuid "5ce651d2-42d1-4363-88ef-2649669f0bbd")
+			(uuid "1c253186-da60-4cdc-8afa-91ff0e9b5696")
 		)
 		(pin "49"
-			(uuid "dd1af0c9-4764-4650-ba7d-5bf1ea268738")
+			(uuid "763b21db-34f3-4c0d-bed4-a285cc10307c")
 		)
 		(pin "50"
-			(uuid "9a02cc8a-1681-4683-9170-4385b0e39aa7")
+			(uuid "34e649c6-c25c-4623-b601-122a96575495")
 		)
 		(pin "51"
-			(uuid "bc73305b-2925-428d-9ba7-43117a1f37f6")
+			(uuid "586a9412-aa19-4104-8c4e-c46dd19ab886")
 		)
 		(pin "52"
-			(uuid "e7c7ee2c-79c7-4996-9a0f-1ff596e6c97f")
+			(uuid "66346bb6-4622-419d-9b14-f383e44e72ca")
 		)
 		(pin "53"
-			(uuid "63d071b6-51f8-474c-802b-e847f5398d66")
+			(uuid "b2d2a797-572a-4a70-bce2-b4ea8a06fb44")
 		)
 		(pin "54"
-			(uuid "efb20c80-3438-43f3-8f24-1885f7b444f8")
+			(uuid "6372c80f-9043-49b4-899b-ef9baddd2b0a")
 		)
 		(pin "55"
-			(uuid "b693c88b-92cf-468c-b083-063ca1aca435")
+			(uuid "a3087376-ed34-43e3-a7db-d2f099d60b41")
 		)
 		(pin "56"
-			(uuid "51f54f18-d6b6-4cc9-bd52-00108cb9b455")
+			(uuid "e135478b-abe8-4032-9f55-357bfa90f8bb")
 		)
 		(pin "57"
-			(uuid "8a88032e-29f5-4933-9617-8aebb350019b")
+			(uuid "a1728fce-492c-4279-98b9-df2b74c28d0e")
 		)
 		(pin "58"
-			(uuid "1b86b4b5-2ec1-4b8e-9d8d-a1bef419ebeb")
+			(uuid "45c774f2-3cc7-489d-bf9e-2ae2815a737d")
 		)
 		(pin "59"
-			(uuid "5743d2e4-4435-4281-b638-5b533d70a35c")
+			(uuid "efff1ff4-48dc-43e7-9064-be5199e55000")
 		)
 		(pin "60"
-			(uuid "8afabd2f-c97e-41e2-a3eb-9f8bea0811b8")
+			(uuid "1f93c01d-5a93-44f9-bcbd-346f3b36909b")
 		)
 		(pin "76"
-			(uuid "b25397e2-e9bd-422e-81ab-543667ebb641")
+			(uuid "3c660ff4-5c08-46c7-98be-d77426e9f9fd")
 		)
 		(pin "77"
-			(uuid "5b824f36-541d-4cbf-af55-400f58e56f1a")
+			(uuid "ce9e3bd5-836e-412c-a6a0-443ecb84610d")
 		)
 		(pin "78"
-			(uuid "fead0f97-d0ca-4604-86f1-6e080c12bc59")
+			(uuid "c1335093-6ccf-4ce1-8a3d-25b2656ec066")
 		)
 		(pin "79"
-			(uuid "58f0d519-5c10-4b9a-82e5-8ef1214a7d79")
+			(uuid "d3dc559a-dbbf-454d-901e-12d616789841")
 		)
 		(pin "80"
-			(uuid "abd13672-9fa1-4bf4-b23a-f19e4abf96b9")
+			(uuid "0f42090e-cffe-48d6-a763-e36d55db6f4c")
 		)
 		(pin "81"
-			(uuid "5de8320b-8cc4-4c20-acb3-fa8a0b05c18b")
+			(uuid "95fed7fc-54f5-4117-b20e-8f173a207026")
 		)
 		(pin "82"
-			(uuid "456c6359-2b14-49b3-a0db-7c0d5d9b5566")
+			(uuid "bc594417-1e1c-481a-a25d-47ba1c81f19d")
 		)
 		(pin "83"
-			(uuid "95641f66-5f87-4ec6-b416-e7a3e404beee")
+			(uuid "8847b0d7-8e5b-4a67-830e-7c7b78e95941")
 		)
 		(pin "84"
-			(uuid "41b3eafe-40fd-4113-9e4b-d48d93b1e552")
+			(uuid "ad9036c6-35db-4872-bb36-8f87d71b1f99")
 		)
 		(pin "85"
-			(uuid "694ab2a7-42aa-4c41-9e8f-f13645e3d71d")
+			(uuid "7815e432-d109-498c-b3d0-ee5949a3f58f")
 		)
 		(pin "86"
-			(uuid "7234e0dd-fa65-4f66-8b8e-4712dd932764")
+			(uuid "8a44bfd1-01e8-4d52-aa40-3f0650e69b69")
 		)
 		(pin "87"
-			(uuid "235de037-819f-48b5-a7a7-2e1e161697d3")
+			(uuid "040e7b8c-08c8-4731-a590-fba36097af77")
 		)
 		(pin "88"
-			(uuid "e59bff80-ac3a-4b14-94a1-887cfe276350")
+			(uuid "91b57ba8-414e-4469-9b4a-47931dc508c7")
 		)
 		(pin "89"
-			(uuid "8c402ed5-c087-407f-b8d8-e251fd264f19")
+			(uuid "44cc651c-cdf7-4a31-8a1a-9fac7f3d0e8d")
 		)
 		(pin "90"
-			(uuid "36b2255d-e6c2-4d9b-a8eb-8194e1989169")
+			(uuid "5038916d-d76b-41f9-8d90-d2415c177cd5")
 		)
 		(instances
-			(project "peugeot"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "J21")
+			(project "peugeot-ecu"
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/cbab4180-f96c-40d4-a72a-2e8d7ebd54d7"
+					(reference "J29")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:Galvanometer")
-		(at 180.34 36.83 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b7df2c2a-a661-4e82-a320-c7855fa4f5ea")
-		(property "Reference" "_4"
-			(at 180.5305 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "%"
-			(at 180.5305 41.275 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 177.8 36.83 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Galvanometer"
-			(at 180.34 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f970ca55-6b77-4ae2-9203-9650ef06cdbb")
-		)
-		(pin "1"
-			(uuid "fb4a234b-629d-4a64-b59a-a8a5ebb69e3e")
-		)
-		(instances
-			(project "peugeot"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "_4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "fab:PWR_12V")
-		(at 124.46 36.83 0)
+		(at 156.21 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc80c096-6fe3-4d85-8f13-7518b4eee8f3")
-		(property "Reference" "#PWR0352"
-			(at 124.46 40.64 0)
+		(uuid "ff38b832-0561-4afc-b523-78978108c6ab")
+		(property "Reference" "#PWR0350"
+			(at 156.21 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7875,7 +7373,7 @@
 			)
 		)
 		(property "Value" "PWR_12V"
-			(at 124.46 32.385 0)
+			(at 156.2099 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7883,7 +7381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 36.83 0)
+			(at 156.21 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7892,7 +7390,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 36.83 0)
+			(at 156.21 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7901,7 +7399,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 124.46 36.83 0)
+			(at 156.21 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7910,217 +7408,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "085bb918-b717-4dee-868f-bec6e6c8399e")
+			(uuid "52e914e3-8ba2-49d3-81ad-ea8f9d9ddfe7")
 		)
 		(instances
 			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "#PWR0352")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Lamp")
-		(at 155.575 77.47 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "ca7c5cd7-defa-486f-a69e-a0d169ed7842")
-		(property "Reference" "LA1"
-			(at 154.3049 74.295 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "CNG  Fuel Type Lamp"
-			(at 155.5749 73.66 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.035 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.035 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Lamp"
-			(at 155.575 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "31633755-9c4b-4e84-a794-edd5eb457ec2")
-		)
-		(pin "1"
-			(uuid "d5a90437-0c2e-4fa4-9b22-4fc830178f42")
-		)
-		(instances
-			(project "peugeot"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "LA1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Galvanometer")
-		(at 137.795 85.725 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cca6436a-df88-4737-b82a-093e1c041cf5")
-		(property "Reference" "_1"
-			(at 137.9855 80.645 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "%"
-			(at 137.9855 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.255 85.725 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 135.255 85.725 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Galvanometer"
-			(at 137.795 85.725 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f6da9d51-f830-4ae9-bf5e-38629b2bee10")
-		)
-		(pin "1"
-			(uuid "3ae916d6-0f73-4b11-b3ef-f4140a42cca1")
-		)
-		(instances
-			(project "peugeot"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "_1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Galvanometer")
-		(at 143.51 130.81 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fd160e35-37a2-454a-80a8-3e840e4e48c7")
-		(property "Reference" "_2"
-			(at 143.7005 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "%"
-			(at 143.7005 135.255 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 140.97 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 130.81 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Galvanometer"
-			(at 143.51 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9963a4b7-aff7-4146-acf5-1d6f59cd6e4c")
-		)
-		(pin "1"
-			(uuid "f96eef8e-5864-4f0d-8020-bab21e6ee1e8")
-		)
-		(instances
-			(project "peugeot"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/213078c7-7dab-4bbc-82d0-5c6c62997afa"
-					(reference "_2")
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/cbab4180-f96c-40d4-a72a-2e8d7ebd54d7"
+					(reference "#PWR0350")
 					(unit 1)
 				)
 			)

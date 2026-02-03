@@ -1468,6 +1468,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 71.12) (xy 184.15 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bad1a58-db7c-4798-8558-03f040352faa")
+	)
+	(wire
+		(pts
 			(xy 266.7 70.485) (xy 254.635 70.485)
 		)
 		(stroke
@@ -1625,16 +1635,6 @@
 			(type default)
 		)
 		(uuid "972e3417-2f71-43b0-b51f-f883c4321883")
-	)
-	(wire
-		(pts
-			(xy 165.1 71.12) (xy 184.15 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "972e4248-d2a2-44ff-949a-c9be6a1ccc0b")
 	)
 	(wire
 		(pts
@@ -3959,7 +3959,7 @@
 			(uuid "0f257217-229f-4964-be5c-1234fd760435")
 		)
 		(instances
-			(project "proteus"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(reference "D2")
 					(unit 1)
@@ -4045,7 +4045,7 @@
 			(uuid "d0af28bc-0a3c-4950-a02b-67f848cf24e3")
 		)
 		(instances
-			(project "proteus"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(reference "D4")
 					(unit 1)
@@ -4131,7 +4131,7 @@
 			(uuid "cd71ed48-7351-4dbb-a6ea-75bc7a051b4e")
 		)
 		(instances
-			(project "proteus"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(reference "D1")
 					(unit 1)
@@ -4235,7 +4235,7 @@
 			(uuid "c29d8362-482a-4cf3-b83e-0dcc720149d3")
 		)
 		(instances
-			(project "proteus"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(reference "D3")
 					(unit 1)
@@ -4885,7 +4885,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "17")
 				)
@@ -5008,7 +5008,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "10")
 				)
@@ -5131,7 +5131,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "18")
 				)
@@ -5254,7 +5254,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "19")
 				)
@@ -5997,7 +5997,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "9")
 				)
@@ -6120,7 +6120,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "11")
 				)
@@ -6243,7 +6243,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "12")
 				)
@@ -6366,7 +6366,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "13")
 				)
@@ -6489,7 +6489,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "6")
 				)
@@ -6612,7 +6612,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "7")
 				)
@@ -6735,7 +6735,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "8")
 				)
@@ -6838,7 +6838,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "2")
 				)
@@ -6971,7 +6971,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "5")
 				)
@@ -7104,7 +7104,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "16")
 				)
@@ -7337,7 +7337,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "4")
 				)
@@ -7420,7 +7420,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "3")
 				)
@@ -7523,7 +7523,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "14")
 				)
@@ -7626,7 +7626,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "15")
 				)
@@ -8389,7 +8389,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "21")
 				)
@@ -8432,7 +8432,7 @@
 			)
 		)
 		(instances
-			(project "peugeot"
+			(project "peugeot-ecu"
 				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb"
 					(page "20")
 				)

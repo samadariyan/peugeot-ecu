@@ -298,11 +298,11 @@
         ""
       ],
       [
-        "pin_to_pin|1530350|1301750|ac48c626-d579-4b54-a3be-7bfd5bdf200f|bac83ef0-96c6-44fb-ab3f-aac1ba25e38c|/da96cc1d-20c0-47ba-9881-2a73783a20fb/00000000-0000-0000-0000-00005d99e6ee|/da96cc1d-20c0-47ba-9881-2a73783a20fb/00000000-0000-0000-0000-00005d99e6ee|/da96cc1d-20c0-47ba-9881-2a73783a20fb/00000000-0000-0000-0000-00005d99f54c",
+        "power_pin_not_driven|1206500|552450|e60ea7f4-99b9-4107-b913-c37a8878e728|00000000-0000-0000-0000-000000000000|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/00a1a19b-e37a-4b85-bf2f-b65f1c0005bd|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/00a1a19b-e37a-4b85-bf2f-b65f1c0005bd|",
         ""
       ],
       [
-        "power_pin_not_driven|1206500|552450|e60ea7f4-99b9-4107-b913-c37a8878e728|00000000-0000-0000-0000-000000000000|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/00a1a19b-e37a-4b85-bf2f-b65f1c0005bd|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/00a1a19b-e37a-4b85-bf2f-b65f1c0005bd|",
+        "power_pin_not_driven|1473200|1257300|1cb7d50f-2fb7-403b-8c34-cfcfe839a883|00000000-0000-0000-0000-000000000000|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/760caca6-0434-4fc6-bcd4-d6cc4df6fd99|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/760caca6-0434-4fc6-bcd4-d6cc4df6fd99|",
         ""
       ],
       [
@@ -1284,7 +1284,7 @@
     ],
     [
       "79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81",
-      "fan_control"
+      "fan_control_AC"
     ],
     [
       "900820c3-35b4-478e-a831-d51193b40c2c",
@@ -1308,11 +1308,11 @@
     ],
     [
       "30ab695f-c99c-447b-8395-67183a25fb8c",
-      "injector_valves"
+      "gasoline_injector"
     ],
     [
-      "760caca6-0434-4fc6-bcd4-d6cc4df6fd99",
-      "speed_sensor"
+      "b303a642-50f6-4373-98d8-63aacc8f2956",
+      "gas_injector"
     ],
     [
       "37dd0797-1cdb-4783-b23c-bfcd017c8bcc",
@@ -1320,7 +1320,15 @@
     ],
     [
       "cbab4180-f96c-40d4-a72a-2e8d7ebd54d7",
-      "gas_pcd_valve"
+      "gas_shut_valves"
+    ],
+    [
+      "24c1a05f-bef7-4dda-ad40-447dd0d3ceec",
+      "cng_switch"
+    ],
+    [
+      "760caca6-0434-4fc6-bcd4-d6cc4df6fd99",
+      "speed_sensor"
     ]
   ],
   "text_variables": {}
