@@ -9,4 +9,5 @@
   (lib (name "vnq7140aj")(type "KiCad")(uri "${KIPRJMOD}/project_lib/vnq7140aj.kicad_sym")(options "")(descr ""))
   (lib (name "vnld5090")(type "KiCad")(uri "${KIPRJMOD}/project_lib/vnld5090.kicad_sym")(options "")(descr ""))
   (lib (name "sicma_socket")(type "KiCad")(uri "${KIPRJMOD}/project_lib/sicma_socket.kicad_sym")(options "")(descr ""))
+  (lib (name "Connectors")(type "KiCad")(uri "${KIPRJMOD}/Connectors.kicad_sym")(options "")(descr ""))
 )
