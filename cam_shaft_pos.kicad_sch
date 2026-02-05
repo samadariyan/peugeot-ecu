@@ -6,6 +6,9 @@
 	(paper "A4")
 	(lib_symbols
 		(symbol "Sensor_Magnetic:A1301xUA"
+			(pin_numbers
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)

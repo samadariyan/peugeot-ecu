@@ -5,42 +5,40 @@
 	(uuid "5d7885f7-09a8-4299-9940-6cc2b34fd618")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Generic:P,E"
-			(power)
+		(symbol "Elektuur_1:Re"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 3.81)
+				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 3.81 3.81 0)
+			(property "Reference" "Re"
+				(at 0.635 3.175 0)
 				(effects
 					(font
-						(size 2.54 2.54)
+						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
-			(property "Value" "P,E"
-				(at 3.81 0 0)
+			(property "Value" "Re"
+				(at 0.635 -3.175 0)
 				(effects
 					(font
-						(size 0.001 0.001)
+						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
-						(size 2.54 2.54)
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
@@ -49,12 +47,12 @@
 				(at 0 0 0)
 				(effects
 					(font
-						(size 2.54 2.54)
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
 			)
-			(property "Description" "earth/ground/earthing/grounding (E)"
+			(property "Description" "operating/relay device/coil; electromagnetic actuator (solenoid)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -63,7 +61,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "P V E earth ground earthing grounding potential voltage tension global power supply node label pin"
+			(property "Sim.Pins" "1=1 2=2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -72,109 +70,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "P,E_1_1"
-				(polyline
-					(pts
-						(xy -3.81 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy 2.54 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin power_in line
-					(at 0 0 0)
-					(length 0)
-					(hide yes)
-					(name "E"
-						(effects
-							(font
-								(size 2.54 2.54)
-							)
-						)
-					)
-					(number "0"
-						(effects
-							(font
-								(size 0 0)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Motor:Fan"
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "M"
-				(at 2.54 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Fan"
-				(at 2.54 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0.254 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0.254 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Fan"
+			(property "Sim.Device" "SPICE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -183,7 +79,37 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Fan Motor"
+			(property "Sim.Params" "X"
+				(at -2.54 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+					(hide yes)
+				)
+			)
+			(property "Indicator" "+"
+				(at -1.27 3.175 0)
+				(do_not_autoplace)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rating" "V/Ω"
+				(at -0.635 -3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Re X operating relay device coil electromagnetic actuator solenoid"
 				(at 0 0 0)
 				(effects
 					(font
@@ -192,116 +118,10 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "PinHeader*P2.54mm* TerminalBlock*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Fan_0_1"
-				(arc
-					(start 0 3.81)
-					(mid -0.0015 0.9048)
-					(end -2.54 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 4.572) (xy 0 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 4.2672) (xy 0 4.6228)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 1.016)
-					(radius 3.2512)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.54 -0.508)
-					(mid 0 1.0618)
-					(end 2.54 -0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.2352) (xy 0 -2.6416)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -5.08) (xy 0 -4.572)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.54 -0.508)
-					(mid 0.047 0.9315)
-					(end 0 3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Fan_1_1"
+			(symbol "Re_1_0"
 				(pin passive line
-					(at 0 7.62 270)
-					(length 2.54)
+					(at 0 5.08 270)
+					(length 3.175)
 					(name "+"
 						(effects
 							(font
@@ -319,7 +139,7 @@
 				)
 				(pin passive line
 					(at 0 -5.08 90)
-					(length 2.54)
+					(length 3.175)
 					(name "-"
 						(effects
 							(font
@@ -336,116 +156,14 @@
 					)
 				)
 			)
-			(embedded_fonts no)
-		)
-		(symbol "SparkFun-Electromechanical:Relay_SPDT_20A_5V_27.6x32.0mm"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "K"
-				(at -3.81 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Relay_SPDT_20A_5V"
-				(at 0 -11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "PCM_SparkFun-Electromechanical:Relay_SPDT_20A_27.6x32.0mm"
-				(at 0 -13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://cdn.sparkfun.com/datasheets/Components/General/Relay.JQX-15F.pdf"
-				(at 0 -16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "5V DC Relay"
-				(at 0 -19.05 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "PROD_ID" "COMP-10736"
-				(at 0 -21.59 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "VCoil" "5VDC"
-				(at 16.51 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ICoil" "185mA"
-				(at 24.13 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "VMax" "240VAC, 28VDC"
-				(at 21.59 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "IMax" "20A@240VAC, 20A@28VDC"
-				(at 25.4 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "SparkFun SPDT Power Relay 20A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Relay_SPDT_20A_5V_27.6x32.0mm_0_0"
+			(symbol "Re_1_1"
 				(polyline
 					(pts
-						(xy 5.08 -2.54) (xy 2.54 -2.54) (xy 3.175 -3.175) (xy 3.81 -2.54)
+						(xy -3.683 -1.905) (xy 3.683 -1.905) (xy 3.683 1.905) (xy -3.683 1.905) (xy -3.683 -1.905) (xy -3.429 -1.651)
+						(xy -3.429 1.651) (xy 3.429 1.651) (xy 3.429 -1.651) (xy -3.429 -1.651) (xy -3.683 -1.905)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -454,10 +172,10 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -7.62) (xy 2.54 -7.62) (xy 3.175 -6.985) (xy 3.81 -7.62)
+						(xy -1.778 -1.778) (xy 1.778 1.778)
 					)
 					(stroke
-						(width 0)
+						(width 0.3556)
 						(type default)
 					)
 					(fill
@@ -465,155 +183,147 @@
 					)
 				)
 			)
-			(symbol "Relay_SPDT_20A_5V_27.6x32.0mm_0_1"
+			(symbol "Re_1_2"
 				(polyline
 					(pts
-						(xy -5.08 5.08) (xy -1.905 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -5.08) (xy -5.08 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -5.08) (xy 3.81 -3.175)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.905 7.62) (xy 1.905 2.54)
+						(xy -3.683 -1.905) (xy 3.683 -1.905) (xy 3.683 1.905) (xy -3.683 1.905) (xy -3.683 -1.905) (xy -3.429 -1.651)
+						(xy -3.429 1.651) (xy 3.429 1.651) (xy 3.429 -1.651) (xy -3.429 -1.651) (xy -3.683 -1.905)
 					)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.905) (xy 0 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.635) (xy 0 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.635) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.905) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.175) (xy 0 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.905 8.255)
-					(end -1.905 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 10.16)
-					(end -5.08 -10.16)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 5.08) (xy 1.905 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
+						(type outline)
 					)
 				)
 			)
-			(symbol "Relay_SPDT_20A_5V_27.6x32.0mm_1_1"
+			(embedded_fonts no)
+		)
+		(symbol "Switch:SW_MEC_5G"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_MEC_5G"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "MEC 5G single pole normally-open tactile switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SW*MEC*5G*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_MEC_5G_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin passive line
-					(at -7.62 5.08 0)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name ""
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -629,9 +339,9 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 -5.08 0)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name ""
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -646,10 +356,13 @@
 						)
 					)
 				)
+			)
+			(symbol "SW_MEC_5G_1_1"
 				(pin passive line
-					(at 7.62 5.08 180)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name ""
+					(hide yes)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -665,9 +378,10 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -2.54 180)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name ""
+					(hide yes)
+					(name "B"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -675,24 +389,6 @@
 						)
 					)
 					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -7.62 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4748,46 +4444,28 @@
 		)
 	)
 	(junction
-		(at 172.72 106.68)
+		(at 157.48 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0a9e6726-fc7d-4518-8a25-8237653dde97")
+		(uuid "59c62d59-09b7-449e-a0b0-dc5f389b34b0")
 	)
 	(junction
-		(at 229.87 80.01)
+		(at 83.82 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "133648c6-af8b-4f5c-89cd-920a77ec62f0")
+		(uuid "80edb645-dfab-45dc-91c4-afcf9851f50c")
 	)
 	(junction
-		(at 146.05 84.455)
+		(at 229.87 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "68578a62-f9ec-428d-80b1-6636efd6cbb9")
+		(uuid "84ae9614-8abe-4544-a3f5-4358091a2f50")
 	)
 	(junction
-		(at 135.255 104.775)
+		(at 157.48 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "79fee001-1368-4977-b3b5-d5cc46bee936")
-	)
-	(junction
-		(at 172.72 120.015)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "981059d2-8288-42aa-b96b-2ff1145d4862")
-	)
-	(junction
-		(at 83.82 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "be1e6cb4-0b91-4648-ad19-17e2cdcaca9a")
-	)
-	(junction
-		(at 229.87 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c149453f-dd24-481c-a5a7-5e2ff20a7179")
+		(uuid "d04aceaa-4caa-477c-9461-b0a1ac4ae042")
 	)
 	(no_connect
 		(at 83.82 130.81)
@@ -4796,6 +4474,10 @@
 	(no_connect
 		(at 229.87 29.21)
 		(uuid "025397d8-89fa-4331-bb17-c53fd87bf8b6")
+	)
+	(no_connect
+		(at 229.87 80.01)
+		(uuid "0423a82e-d321-400d-9f16-a7a394e59cfe")
 	)
 	(no_connect
 		(at 229.87 82.55)
@@ -4822,16 +4504,8 @@
 		(uuid "112aaca9-ddfd-4559-83dd-99ef3bae1ccb")
 	)
 	(no_connect
-		(at 229.87 118.11)
-		(uuid "11848ce1-2cac-4395-a0c7-71d26d3bc30f")
-	)
-	(no_connect
 		(at 229.87 105.41)
 		(uuid "11a53e94-e61f-462c-8f87-49ebd709d4b6")
-	)
-	(no_connect
-		(at 132.715 99.695)
-		(uuid "12655c4e-3216-4220-b7b1-a3dd56fc138a")
 	)
 	(no_connect
 		(at 229.87 128.27)
@@ -4864,10 +4538,6 @@
 	(no_connect
 		(at 83.82 34.29)
 		(uuid "24e44a3f-8f90-4c77-96d6-c3b758156746")
-	)
-	(no_connect
-		(at 83.82 97.79)
-		(uuid "259110fe-2b21-4f4e-8e27-2cf84ca5aad0")
 	)
 	(no_connect
 		(at 229.87 90.17)
@@ -4914,16 +4584,8 @@
 		(uuid "38cbe241-eb82-4b0b-be69-573ad71f8cac")
 	)
 	(no_connect
-		(at 83.82 39.37)
-		(uuid "43e5f527-1bf9-4d12-aace-a44818c1c3fe")
-	)
-	(no_connect
 		(at 83.82 118.11)
 		(uuid "475b1f03-443a-4d06-88af-a800305d0637")
-	)
-	(no_connect
-		(at 191.77 96.52)
-		(uuid "4a33519a-54f8-4d4b-9d19-115f3496c7e0")
 	)
 	(no_connect
 		(at 83.82 115.57)
@@ -4932,6 +4594,10 @@
 	(no_connect
 		(at 229.87 146.05)
 		(uuid "50be6c18-c460-4fe6-a531-32b417d2abfa")
+	)
+	(no_connect
+		(at 229.87 39.37)
+		(uuid "51259cbe-06ad-4917-8127-b62522ba95ab")
 	)
 	(no_connect
 		(at 229.87 143.51)
@@ -5134,6 +4800,10 @@
 		(uuid "f61fd038-dc09-4a36-bc0c-1ddd89d4cfad")
 	)
 	(no_connect
+		(at 83.82 135.89)
+		(uuid "f910aa02-ba9c-430b-a83a-7a486808ac78")
+	)
+	(no_connect
 		(at 83.82 80.01)
 		(uuid "fd0e49a8-c02f-4ecc-98c3-2ab26f2ae928")
 	)
@@ -5147,553 +4817,113 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 39.37) (xy 146.05 39.37)
+			(xy 83.82 97.79) (xy 115.57 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "113f21f2-ba1e-4642-8e3b-25dd474d96cc")
+		(uuid "098c9d2c-9aa6-4114-88df-3e2e2bb32be2")
 	)
 	(wire
 		(pts
-			(xy 172.72 106.68) (xy 172.72 102.235)
+			(xy 157.48 97.79) (xy 157.48 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "192757e9-babc-4490-a516-1ddf046a8a52")
+		(uuid "2d082879-ef4d-49bb-997a-025e268a0fbe")
 	)
 	(wire
 		(pts
-			(xy 169.545 84.455) (xy 146.05 84.455)
+			(xy 157.48 39.37) (xy 157.48 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d7f0514-3d44-4981-be20-360df32d2b36")
+		(uuid "4171fb20-e68f-4554-a3fd-32306f410dac")
 	)
 	(wire
 		(pts
-			(xy 233.68 39.37) (xy 229.87 39.37)
+			(xy 125.73 97.79) (xy 157.48 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "297fd42d-5575-4bfa-8ec5-c6fb6b5a7535")
+		(uuid "7c075384-357c-4b8a-91cd-0628ec579589")
 	)
 	(wire
 		(pts
-			(xy 172.72 120.015) (xy 172.72 121.92)
+			(xy 83.82 39.37) (xy 106.045 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f652396-1f5b-44ca-ba75-8449b750165a")
+		(uuid "7fc56651-9bcf-48f9-a568-824508404f7c")
 	)
 	(wire
 		(pts
-			(xy 135.255 135.89) (xy 83.82 135.89)
+			(xy 157.48 34.925) (xy 157.48 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "35f76061-bf8b-47dd-9103-0203d1729caf")
+		(uuid "a45b71ac-00b1-4434-b97e-cc3fcb57aab9")
 	)
 	(wire
 		(pts
-			(xy 83.82 135.89) (xy 80.01 135.89)
+			(xy 229.87 118.11) (xy 233.68 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c15e8a7-3db4-42d5-80fd-c50640859e82")
+		(uuid "b65cdb89-066c-46fd-b237-05a56e49c32c")
 	)
 	(wire
 		(pts
-			(xy 116.205 80.01) (xy 116.205 92.075)
+			(xy 215.9 118.11) (xy 229.87 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c6808b4-81b6-45ae-8d0b-05e07d217b51")
+		(uuid "c1bc4f85-a706-40bd-9e85-f654349ba251")
 	)
 	(wire
 		(pts
-			(xy 233.68 80.01) (xy 229.87 80.01)
+			(xy 205.74 118.11) (xy 157.48 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f2bc5cd-0559-4a13-b06d-3bd368212632")
+		(uuid "db187a18-49b0-4a70-a3a6-4571bb1bc8e4")
 	)
 	(wire
 		(pts
-			(xy 191.77 106.68) (xy 191.77 101.6)
+			(xy 116.205 39.37) (xy 157.48 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59d82224-1038-41dd-8ed9-7e288f8eed4f")
+		(uuid "e56f4865-b7ac-4c5a-aa4b-2bc235635bd2")
 	)
 	(wire
 		(pts
-			(xy 116.205 80.01) (xy 229.87 80.01)
+			(xy 80.01 97.79) (xy 83.82 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5d5df4e8-85cd-49fb-9ad1-ce15250d8eab")
-	)
-	(wire
-		(pts
-			(xy 164.465 107.315) (xy 164.465 120.015)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d8e6cf7-1574-4491-82b1-d51cdf6974eb")
-	)
-	(wire
-		(pts
-			(xy 163.83 102.235) (xy 172.72 102.235)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e378e5c-a2d1-4c2b-8459-4d354fa87b4a")
-	)
-	(wire
-		(pts
-			(xy 135.255 104.775) (xy 135.255 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e1950e0-86fc-4ab1-ae83-f06bd2f2e75f")
-	)
-	(wire
-		(pts
-			(xy 135.255 104.775) (xy 132.715 104.775)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74163f8b-2a63-49fe-8470-c9656911bdd5")
-	)
-	(wire
-		(pts
-			(xy 146.05 84.455) (xy 146.05 94.615)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8787c4db-f4be-4b28-84fa-7fcda28eecf8")
-	)
-	(wire
-		(pts
-			(xy 146.05 39.37) (xy 146.05 84.455)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a48368b0-9d65-4f67-8ab5-6db51db237d8")
-	)
-	(wire
-		(pts
-			(xy 164.465 120.015) (xy 172.72 120.015)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9d24582-45d5-4a72-a5cf-e7787764efcd")
-	)
-	(wire
-		(pts
-			(xy 135.89 104.775) (xy 135.255 104.775)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adaf75f0-d45e-4079-b3ad-9b029bc1c961")
-	)
-	(wire
-		(pts
-			(xy 172.72 106.68) (xy 191.77 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b8ff2204-b359-4434-a8f2-ec70383674ea")
-	)
-	(wire
-		(pts
-			(xy 169.545 88.9) (xy 169.545 84.455)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc365a2a-af6a-4ab5-bf70-52a4e5bb2729")
-	)
-	(wire
-		(pts
-			(xy 116.205 102.235) (xy 117.475 102.235)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf4cd300-ebfb-4b8c-928a-72ec656f33ed")
-	)
-	(wire
-		(pts
-			(xy 116.205 92.075) (xy 117.475 92.075)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c805aedd-f94d-4719-9e4b-7e7f8897c504")
-	)
-	(wire
-		(pts
-			(xy 146.05 94.615) (xy 148.59 94.615)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c88e96d1-1cde-4506-872d-5e66388cb7d9")
-	)
-	(wire
-		(pts
-			(xy 169.545 88.9) (xy 176.53 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb035f13-7c0a-49a6-90ec-d74c38ddb2d8")
-	)
-	(wire
-		(pts
-			(xy 172.72 119.38) (xy 172.72 120.015)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd01a656-bfae-43dc-b0ac-848edc145711")
-	)
-	(wire
-		(pts
-			(xy 164.465 107.315) (xy 163.83 107.315)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd0c5e12-3390-498a-a82a-16493fad368b")
-	)
-	(table
-		(column_count 1)
-		(border
-			(external yes)
-			(header yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(separators
-			(rows yes)
-			(cols yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(column_widths 42.545)
-		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54
-			2.54 2.54 2.54
-		)
-		(cells
-			(table_cell "CAN2_LOW"
-				(exclude_from_sim no)
-				(at 239.268 109.093 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "b840414e-caf5-4bee-9ee0-62b0c5d7137e")
-			)
-			(table_cell "CAN2_HIGH"
-				(exclude_from_sim no)
-				(at 239.268 111.633 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "8dfd9482-5ead-4805-9dce-735f149dbb7a")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 114.173 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "48fe9b80-a2d8-4015-8407-9fcae2c5e6a9")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 116.713 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "35a07da5-64a3-46fb-aad6-fe64a28846ce")
-			)
-			(table_cell "Fuel Pump Relay (DO LO)"
-				(exclude_from_sim no)
-				(at 239.268 119.253 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "2300e585-7282-4e8c-a424-74e5cd07da2a")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 121.793 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "8f3ba8cd-64f7-4aee-9225-7614f9212f7b")
-			)
-			(table_cell "Upstream Oxygen Sensor Heater B(0.85)"
-				(exclude_from_sim no)
-				(at 239.268 124.333 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "5a5b5fd7-f632-4d6b-854a-014959b20761")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 126.873 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "6d704771-ce70-48ad-b418-aca04ba6a282")
-			)
-			(table_cell "TCO_PWM (Provision)"
-				(exclude_from_sim no)
-				(at 239.268 129.413 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "81f2c0f0-1af6-4871-bdf2-73d9f9094196")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 131.953 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "450bae40-c843-48a0-aab0-e950231a8dd1")
-			)
-			(table_cell "Main Relay Sense (DI +12)"
-				(exclude_from_sim no)
-				(at 239.268 134.493 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "470d3948-d8a0-47ba-8227-55287bb8c1e1")
-			)
-			(table_cell "Gasoline Injector (1.0)(Cyl2)"
-				(exclude_from_sim no)
-				(at 239.268 137.033 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "3423bb7f-7f86-4ccd-bc21-03cf6e7861fa")
-			)
-			(table_cell "Gasoline Injector (1.0)(Cyl4)"
-				(exclude_from_sim no)
-				(at 239.268 139.573 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "fb13aca4-98c9-4393-86df-dcefa8747c1f")
-			)
-			(table_cell "Gas Injector (HD)(1.0)(Cyl2)"
-				(exclude_from_sim no)
-				(at 239.268 142.113 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "89f5ddf2-7e36-4667-a662-bcd8f166a611")
-			)
-			(table_cell "Gas Injector (HD)(1.0)(Cyl4)"
-				(exclude_from_sim no)
-				(at 239.268 144.653 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "46bba65b-d9ff-4274-9818-37c8f7365a22")
-			)
-		)
+		(uuid "f281e514-7b07-4228-bb1c-dad058e597a1")
 	)
 	(table
 		(column_count 1)
@@ -6839,6 +6069,286 @@
 			2.54 2.54 2.54
 		)
 		(cells
+			(table_cell "CAN2_LOW"
+				(exclude_from_sim no)
+				(at 239.268 109.093 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "b840414e-caf5-4bee-9ee0-62b0c5d7137e")
+			)
+			(table_cell "CAN2_HIGH"
+				(exclude_from_sim no)
+				(at 239.268 111.633 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "8dfd9482-5ead-4805-9dce-735f149dbb7a")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 114.173 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "48fe9b80-a2d8-4015-8407-9fcae2c5e6a9")
+			)
+			(table_cell "AC Compressor Relay Out"
+				(exclude_from_sim no)
+				(at 239.268 116.713 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "35a07da5-64a3-46fb-aad6-fe64a28846ce")
+			)
+			(table_cell "Fuel Pump Relay (DO LO)"
+				(exclude_from_sim no)
+				(at 239.268 119.253 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "2300e585-7282-4e8c-a424-74e5cd07da2a")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 121.793 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "8f3ba8cd-64f7-4aee-9225-7614f9212f7b")
+			)
+			(table_cell "Upstream Oxygen Sensor Heater B(0.85)"
+				(exclude_from_sim no)
+				(at 239.268 124.333 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "5a5b5fd7-f632-4d6b-854a-014959b20761")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 126.873 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "6d704771-ce70-48ad-b418-aca04ba6a282")
+			)
+			(table_cell "TCO_PWM (Provision)"
+				(exclude_from_sim no)
+				(at 239.268 129.413 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "81f2c0f0-1af6-4871-bdf2-73d9f9094196")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 131.953 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "450bae40-c843-48a0-aab0-e950231a8dd1")
+			)
+			(table_cell "Main Relay Sense (DI +12)"
+				(exclude_from_sim no)
+				(at 239.268 134.493 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "470d3948-d8a0-47ba-8227-55287bb8c1e1")
+			)
+			(table_cell "Gasoline Injector (1.0)(Cyl2)"
+				(exclude_from_sim no)
+				(at 239.268 137.033 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "3423bb7f-7f86-4ccd-bc21-03cf6e7861fa")
+			)
+			(table_cell "Gasoline Injector (1.0)(Cyl4)"
+				(exclude_from_sim no)
+				(at 239.268 139.573 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "fb13aca4-98c9-4393-86df-dcefa8747c1f")
+			)
+			(table_cell "Gas Injector (HD)(1.0)(Cyl2)"
+				(exclude_from_sim no)
+				(at 239.268 142.113 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "89f5ddf2-7e36-4667-a662-bcd8f166a611")
+			)
+			(table_cell "Gas Injector (HD)(1.0)(Cyl4)"
+				(exclude_from_sim no)
+				(at 239.268 144.653 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "46bba65b-d9ff-4274-9818-37c8f7365a22")
+			)
+		)
+	)
+	(table
+		(column_count 1)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 42.545)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54
+			2.54 2.54 2.54
+		)
+		(cells
 			(table_cell "TMAP sensor Signal1"
 				(exclude_from_sim no)
 				(at 239.268 68.453 0)
@@ -7096,118 +6606,38 @@
 			)
 		)
 	)
-	(label "809"
-		(at 229.87 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4783b139-cb43-4a51-a70d-c6b767b2b287")
-	)
-	(hierarchical_label "B20"
+	(hierarchical_label "A5"
 		(shape passive)
-		(at 233.68 39.37 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "73c6ed81-ba8e-4506-9dd4-acb5e6d6c9f9")
-	)
-	(hierarchical_label "B50"
-		(shape passive)
-		(at 233.68 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "829c626e-ec75-4fb4-aa58-447d9ed73553")
-	)
-	(hierarchical_label "A71"
-		(shape passive)
-		(at 80.01 135.89 180)
+		(at 80.01 39.37 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "d182a73a-5be7-44f6-b8f2-4087b0260df0")
+		(uuid "2fa44f6c-32fc-42a4-8b0d-4acaee8e7407")
 	)
-	(symbol
-		(lib_id "Motor:Fan")
-		(at 172.72 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "129d5667-e3d0-4a6f-90ee-ef3e632c55b7")
-		(property "Reference" "M3"
-			(at 177.8 113.0299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
+	(hierarchical_label "A42"
+		(shape passive)
+		(at 80.01 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Value" "Fan2"
-			(at 177.8 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+		(uuid "ac98f4b6-69b6-4e3c-841c-4555e19960d9")
+	)
+	(hierarchical_label "B79"
+		(shape passive)
+		(at 233.68 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Footprint" ""
-			(at 172.72 114.046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 172.72 114.046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Fan"
-			(at 172.72 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3a7203dd-5ec0-439f-af88-dcac4927ab51")
-		)
-		(pin "1"
-			(uuid "22f5496e-dca2-4b82-9fbc-2564ab165cd8")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "M3")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "b3b00d35-b408-4cbe-87b2-4e88979e46c3")
 	)
 	(symbol
 		(lib_id "sicma_socket:Conn_01x90_3Row_Socket")
@@ -7218,7 +6648,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "188868a1-2e03-4f78-bbcd-0336248f7afb")
-		(property "Reference" "J18"
+		(property "Reference" "J25"
 			(at 235.712 26.797 0)
 			(effects
 				(font
@@ -7398,145 +6828,401 @@
 			(uuid "43327fa9-86f5-4df1-b33c-90cacf019696")
 		)
 		(pin "16"
-			(uuid "94e866d6-131c-4d7a-b93d-a84957324bc0")
+			(uuid "8b33a652-115b-4f2f-a7f3-110032970518")
 		)
 		(pin "17"
-			(uuid "a18b7c47-d459-48f0-91b9-f4594c394d02")
+			(uuid "663e67b6-421f-4b62-917e-9447ccd4a578")
 		)
 		(pin "18"
-			(uuid "3110803f-45d0-47a7-b9c2-6c30d9c496de")
+			(uuid "9687d90d-e51b-4122-9a25-b7cdcc76b33a")
 		)
 		(pin "19"
-			(uuid "c91148ba-eb94-4d11-b6b4-c449d4d6a51b")
+			(uuid "85d2052b-f0fa-4ec9-b245-11c0eb1ca565")
 		)
 		(pin "20"
-			(uuid "b5796e64-3839-47e0-aab5-8b7dba2cc310")
+			(uuid "6db7fe1b-4999-4ce1-934a-905d15fa67b3")
 		)
 		(pin "21"
-			(uuid "35a76426-713a-4e95-ba84-deec810c71ef")
+			(uuid "2eef1e9e-e9c9-4e53-a36f-d55d837a870b")
 		)
 		(pin "22"
-			(uuid "facb89d6-5d49-4216-9baf-a9d113686d03")
+			(uuid "2da42ec2-6fe5-454c-aefb-8e03826525ca")
 		)
 		(pin "23"
-			(uuid "eec72f8e-70e0-4d9a-acd3-9604aff72bee")
+			(uuid "95e38993-634f-4ea0-9748-091bb1a67d7f")
 		)
 		(pin "24"
-			(uuid "c460c513-1bc3-4859-90cc-e0474ac80b91")
+			(uuid "e5931301-0195-4df4-8655-47c7d49a8789")
 		)
 		(pin "25"
-			(uuid "a24a4b45-f28c-4cee-baab-a6d356585d4e")
+			(uuid "c09cd9bb-361a-4a7c-86b9-6610686ba137")
 		)
 		(pin "26"
-			(uuid "eb5a02a8-fcc0-4d4c-9c0d-6846f612e4b0")
+			(uuid "e21c1235-e145-487c-ae5f-86c1d348288e")
 		)
 		(pin "27"
-			(uuid "fa185739-87b8-44b6-b565-84e16cd8c273")
+			(uuid "c3c800e2-d5a9-41b1-bbea-198564b084ad")
 		)
 		(pin "28"
-			(uuid "cd9b37ad-ee5e-41de-b40c-487db46d87f2")
+			(uuid "22b2e5b0-01d4-4465-996b-36e8cbcb02ce")
 		)
 		(pin "29"
-			(uuid "c2ca9c50-71f3-4775-8bf0-77d9cce3da20")
+			(uuid "1a55a833-c7fb-4426-9d5a-c591a855d3e5")
 		)
 		(pin "30"
-			(uuid "a5d81167-4207-4bb8-9026-34ad9c61a993")
+			(uuid "62131160-76f2-4a99-b692-a9dd5c882f1f")
 		)
 		(pin "46"
-			(uuid "1c991949-1d78-4c1c-9bec-133d59c58246")
+			(uuid "335d3645-250f-4492-8040-d8664001cb85")
 		)
 		(pin "47"
-			(uuid "6272244f-e142-46fb-80b1-5e5a6d129577")
+			(uuid "9b599438-7c36-488f-86d1-0aeef57fe8f5")
 		)
 		(pin "48"
-			(uuid "5d8a2d13-bc84-4d14-992c-96f9fff6e898")
+			(uuid "6699044d-83ae-4a08-b5e9-86d835279dd8")
 		)
 		(pin "49"
-			(uuid "8bc5c530-9561-47dc-981e-c715c442e5c8")
+			(uuid "c0546297-e74d-4580-9ac7-9be7437378e2")
 		)
 		(pin "50"
-			(uuid "24a70959-bc46-4608-914d-e3f59ae83bac")
+			(uuid "3413700a-c779-41c5-ab11-64c05c199f67")
 		)
 		(pin "51"
-			(uuid "437941a8-c19c-4aa7-ab5d-b14c006a1f63")
+			(uuid "8518297c-4560-4527-bf9a-fbcca67d8092")
 		)
 		(pin "52"
-			(uuid "5c083005-1d3c-4b91-b6e5-0243fb94124d")
+			(uuid "5b7fea2d-863a-4b55-b25e-c8f93446f0ec")
 		)
 		(pin "53"
-			(uuid "3245ad70-632f-443c-8264-e17f010a47d2")
+			(uuid "cb0556c3-88ee-483a-b1d8-5f07eb7e86d7")
 		)
 		(pin "54"
-			(uuid "2251ba91-eb18-47e0-9df6-752dbf17a684")
+			(uuid "752d7341-49ce-40ad-879b-8c350dfcde84")
 		)
 		(pin "55"
-			(uuid "9bd99a55-6906-46c0-8f12-cfaf34a1e5e6")
+			(uuid "2222fbd9-cfad-4afa-8a69-9a2afec8490b")
 		)
 		(pin "56"
-			(uuid "bcf73daf-d337-45c2-bedb-7940a0b82054")
+			(uuid "37eea092-5f6f-4866-8ab6-606981459fff")
 		)
 		(pin "57"
-			(uuid "17a11c94-5fc8-4975-9fcb-659ca32644e7")
+			(uuid "588ca102-d70d-441d-a736-43491134350c")
 		)
 		(pin "58"
-			(uuid "17f6b945-0831-4709-85d6-3542ef361afc")
+			(uuid "f070d7f6-9b59-408a-a1a9-0ec1ea50853f")
 		)
 		(pin "59"
-			(uuid "0f09abe1-68f5-40e9-ade7-e4b7df76bd52")
+			(uuid "6a117472-00e9-421c-8384-ba7ffa919314")
 		)
 		(pin "60"
-			(uuid "f2d283e0-9882-47a9-887f-86de70201384")
+			(uuid "7608233f-d31a-4d1a-acc0-d76d60373b4d")
 		)
 		(pin "76"
-			(uuid "8cfce238-ae93-4737-b85b-813566e8b4a6")
+			(uuid "b4468656-07bb-4cfa-89af-8191a5999d26")
 		)
 		(pin "77"
-			(uuid "658383a1-1555-4f69-8862-1e9c5d381381")
+			(uuid "c9d7be36-7155-4c5e-a573-51ae657ce9dd")
 		)
 		(pin "78"
-			(uuid "ab4af395-90ac-4d06-a61a-2b807f309b6b")
+			(uuid "30f077b0-6bb3-488a-897a-856d87516c61")
 		)
 		(pin "79"
-			(uuid "575ad633-4f53-47cf-ba67-2fc074697cf1")
+			(uuid "ae05f776-870f-47e1-8d25-cf32fbc18f86")
 		)
 		(pin "80"
-			(uuid "6768038d-1397-4e4c-880f-394dc46bcb3c")
+			(uuid "8214842c-d6d1-4898-8cf2-0cdb363ca009")
 		)
 		(pin "81"
-			(uuid "71db6b4f-53b6-4f55-bb98-798b2a19b5ee")
+			(uuid "550025e5-0e5c-4331-bb5c-f300006290b7")
 		)
 		(pin "82"
-			(uuid "3289ec52-fbf4-4ce3-b9db-bec7118890f3")
+			(uuid "88adaf6e-8af5-4d35-9d10-da27b6b22971")
 		)
 		(pin "83"
-			(uuid "315bee53-4496-4ca9-87c6-0d42f3257f0a")
+			(uuid "e9267b64-26eb-4c0a-83a3-59a111bc0e13")
 		)
 		(pin "84"
-			(uuid "b105d73e-f34d-469e-a3d0-0ff7b54ca49e")
+			(uuid "76f47efb-8c70-4b08-8e09-2b59716e1561")
 		)
 		(pin "85"
-			(uuid "fd8777c4-023c-4080-8f5d-9e9f0efbb63b")
+			(uuid "79723683-daf9-42e1-8a04-8fee5cbbd6a1")
 		)
 		(pin "86"
-			(uuid "cbf94a0f-6aea-49d2-a1a2-cd13b64ea343")
+			(uuid "0d446e85-ed5d-45bc-82d6-e69d0d5b9d8a")
 		)
 		(pin "87"
-			(uuid "7e4f80bb-43a8-4013-86a2-f122b2034e96")
+			(uuid "3805c66f-5de8-41da-8a74-13b5dcf45689")
 		)
 		(pin "88"
-			(uuid "db81892b-f654-4f14-8ec8-bf9f76e24a59")
+			(uuid "dba5b0f9-a406-44a2-a2df-1ee36ae6c1b7")
 		)
 		(pin "89"
-			(uuid "588b4d0a-f68a-40a4-b678-5d3fd851c44d")
+			(uuid "ebf67d8d-a0fc-4f06-b947-a00a13669233")
 		)
 		(pin "90"
-			(uuid "dfc05704-927c-443d-a754-2558a756ac31")
+			(uuid "5f2fd224-4f1f-483d-8fb8-d33a2fa23e3c")
 		)
 		(instances
 			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "J18")
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/40e70cd3-eb78-4620-809b-438e2b4efd55"
+					(reference "J25")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Elektuur_1:Re")
+		(at 210.82 118.11 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "1d30f275-965f-4460-86a8-b24c9df7b33a")
+		(property "Reference" "Re14"
+			(at 209.5499 113.665 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "AC Compressor Relay"
+			(at 210.8199 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "operating/relay device/coil; electromagnetic actuator (solenoid)"
+			(at 210.82 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=1 2=2"
+			(at 210.82 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 210.82 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "X"
+			(at 207.645 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Indicator" "+"
+			(at 207.645 119.38 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "V/Ω"
+			(at 213.995 118.745 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72fe37b9-5d88-4459-993c-87367d469f06")
+		)
+		(pin "2"
+			(uuid "9808eeae-6e31-4f2d-8b84-3ff0e244e6f3")
+		)
+		(instances
+			(project "peugeot-ecu"
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/40e70cd3-eb78-4620-809b-438e2b4efd55"
+					(reference "Re14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_MEC_5G")
+		(at 111.125 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2aed7f3e-aadf-402f-91d1-72871a106bf8")
+		(property "Reference" "SW6"
+			(at 111.125 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_MEC_5G"
+			(at 111.125 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.125 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
+			(at 111.125 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "MEC 5G single pole normally-open tactile switch"
+			(at 111.125 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ecce92b-ba9a-4638-a1ea-358420c74164")
+		)
+		(pin "4"
+			(uuid "e259a7f3-08ae-470a-b54a-def2fa32dc4c")
+		)
+		(pin "2"
+			(uuid "77586ddf-f605-4d83-894c-e36632dd6b05")
+		)
+		(pin "3"
+			(uuid "f3ed9168-2e67-404f-8371-d15343480e1b")
+		)
+		(instances
+			(project "peugeot-ecu"
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/40e70cd3-eb78-4620-809b-438e2b4efd55"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "fab:PWR_12V")
+		(at 157.48 34.925 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4641f055-f7ef-4392-9c7f-c630ed8254b6")
+		(property "Reference" "#PWR0354"
+			(at 157.48 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_12V"
+			(at 157.4799 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 157.48 34.925 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3c1aa52-b922-4133-a08b-ff7351dd4988")
+		)
+		(instances
+			(project "peugeot-ecu"
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/40e70cd3-eb78-4620-809b-438e2b4efd55"
+					(reference "#PWR0354")
+					(unit 1)
 				)
 			)
 		)
@@ -7551,7 +7237,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5e070eb5-b5f8-40cd-a42c-9438266156d7")
-		(property "Reference" "J18"
+		(property "Reference" "J25"
 			(at 79.502 26.6064 0)
 			(effects
 				(font
@@ -7598,139 +7284,139 @@
 			)
 		)
 		(pin "1"
-			(uuid "e211198d-6962-4df1-8583-f6030819e38c")
+			(uuid "e60ebee2-248f-4ed9-9afd-cf1bba8ab138")
 		)
 		(pin "2"
-			(uuid "79a98e76-99ad-467c-9393-098a54c47549")
+			(uuid "c52d3f96-56ba-499c-ad6d-438532892e4e")
 		)
 		(pin "3"
-			(uuid "32d349c5-9c86-40df-b7ff-9c5652c76b6e")
+			(uuid "0e357770-8f25-4c83-b929-e68d3d00bdd7")
 		)
 		(pin "4"
-			(uuid "65bd2c46-b5c1-44b4-81c7-eabd81cd0331")
+			(uuid "b3845ad0-3450-450f-b741-9418a149af45")
 		)
 		(pin "5"
-			(uuid "bae99918-53e8-462b-a7a2-5526e0fce82e")
+			(uuid "3cf6efcd-bafa-40a8-9a1d-5f41521f7cde")
 		)
 		(pin "6"
-			(uuid "4e7d9204-46e3-4138-89e3-85b670cd7746")
+			(uuid "09e68420-d417-456c-ad99-0f9a1e459cfe")
 		)
 		(pin "7"
-			(uuid "23d942a2-694d-42d0-baf6-a7decef11d37")
+			(uuid "94c1e2bc-aa35-416e-8454-c9b06c94758b")
 		)
 		(pin "8"
-			(uuid "2a8f88bd-fb1c-43da-ac94-d2095597bac5")
+			(uuid "07f69b9b-2587-4ee3-9dbd-1d3bc3e6fa83")
 		)
 		(pin "9"
-			(uuid "5e84bea6-6255-460d-a56a-a0d5c3f87fb1")
+			(uuid "8d4b98c1-a1b7-4883-81e9-955491c838ea")
 		)
 		(pin "10"
-			(uuid "daf23b5f-3437-41dc-a046-f2a2decc1569")
+			(uuid "b8165c15-4c99-45d5-b69c-138127714f6f")
 		)
 		(pin "11"
-			(uuid "0663605d-31e6-4866-bcb3-4383b33be030")
+			(uuid "e47f4c8f-ee21-4d23-b536-59eba24df001")
 		)
 		(pin "12"
-			(uuid "9665db14-9abf-4752-99ff-ddcf188b4505")
+			(uuid "7ab641b1-eacb-4cb7-bcd9-6a89824fb7ff")
 		)
 		(pin "13"
-			(uuid "960f60fe-9742-43e4-9547-88d524284e45")
+			(uuid "b797796b-cc2e-421d-abaa-62308c5dbd38")
 		)
 		(pin "14"
-			(uuid "82a73d44-e444-4932-abdf-8ed87adf37ec")
+			(uuid "8dd62e8d-4731-4858-8f60-1a0135f266ed")
 		)
 		(pin "15"
-			(uuid "6a03a8ae-295a-478e-9e7d-ec285261497a")
+			(uuid "7e06a218-9388-4691-83f7-e946f83c5341")
 		)
 		(pin "31"
-			(uuid "e80be90c-0d39-4f29-96fe-e7e80a49b254")
+			(uuid "3aba0fc6-4114-4be2-9909-801fa5729b66")
 		)
 		(pin "32"
-			(uuid "6c0c1522-4613-4531-9c0b-4bf9f003d89e")
+			(uuid "2040af29-58e9-4804-958f-e0ef3b359930")
 		)
 		(pin "33"
-			(uuid "b090ce64-b5c6-4b87-8ce2-58267283be2d")
+			(uuid "50def0d4-5aa9-4437-9bff-ba8a8eeacf71")
 		)
 		(pin "34"
-			(uuid "17d7c74f-d0b6-4d23-a329-97c069f10087")
+			(uuid "d6016f1e-984a-4169-9fe1-e6a4739fe0c7")
 		)
 		(pin "35"
-			(uuid "9e2fb9bd-fcc1-4dff-8550-db3fd2379701")
+			(uuid "2a5d2faf-631c-43c9-a03f-48e9c8f502f3")
 		)
 		(pin "36"
-			(uuid "36e70a47-f56a-4e96-bc43-09fc86d5072a")
+			(uuid "9b3c72ed-f458-4bb2-a009-a1c08c309d45")
 		)
 		(pin "37"
-			(uuid "5e60fd81-eff5-4b62-845a-04665730c482")
+			(uuid "30a01520-2712-42df-80ad-2f47dfd906ba")
 		)
 		(pin "38"
-			(uuid "10004791-40c1-4c98-93ee-ddfa9a1dfa5e")
+			(uuid "390c80ca-bbe2-45c1-84c3-fc70dad97644")
 		)
 		(pin "39"
-			(uuid "9ff37d8c-70dc-41b5-8e32-b298c7933a6d")
+			(uuid "e0481459-9bc3-4f4d-8015-38aed7e19029")
 		)
 		(pin "40"
-			(uuid "689f612f-7355-42ab-80d9-7a8ff1aa9998")
+			(uuid "51a0a2e7-2df4-4553-8fce-1cfa615fe3c0")
 		)
 		(pin "41"
-			(uuid "a25028c7-8476-46e9-bc7d-bb60af99edd1")
+			(uuid "c53dca3f-5783-4898-9e1d-c3ecd6105a7f")
 		)
 		(pin "42"
-			(uuid "58df12a9-2edc-4a0a-a5ed-18a28bbf0ba4")
+			(uuid "69a4ca86-b5cc-4d78-b0fa-931e4787edcc")
 		)
 		(pin "43"
-			(uuid "582b1bec-7919-421e-9be3-0edfa77c6926")
+			(uuid "908c9382-ce9d-496a-9bc1-dc0ec1a081eb")
 		)
 		(pin "44"
-			(uuid "2f50bda5-fe5c-4d25-8537-b78500ca606a")
+			(uuid "081f435b-1f06-4af3-b0bf-2554850dc671")
 		)
 		(pin "45"
-			(uuid "6ade7997-9ca8-4d67-8def-957c1a66edfc")
+			(uuid "955f67be-038f-4129-a199-d3bbcb511d1b")
 		)
 		(pin "61"
-			(uuid "45167237-0a88-459f-9fd4-929d0215804a")
+			(uuid "6a24addc-9a54-4706-9ccf-fa04d1f709b0")
 		)
 		(pin "62"
-			(uuid "83690a0a-d352-4b82-8972-dd633234de87")
+			(uuid "68fb2586-3f77-4050-94ad-f8fd847306dd")
 		)
 		(pin "63"
-			(uuid "32f7efae-35bf-415a-a81c-00e870c772db")
+			(uuid "5746acf1-b949-450a-9670-1266a18df695")
 		)
 		(pin "64"
-			(uuid "07ca0368-eb6f-44da-a30e-cd8abc7190ff")
+			(uuid "77791fce-4e07-4206-a8c5-7adf9f59ead5")
 		)
 		(pin "65"
-			(uuid "f9d01754-7969-4b86-99e9-ff9bfee6ee85")
+			(uuid "73896e51-7c5b-4875-9f2a-937aac2fe739")
 		)
 		(pin "66"
-			(uuid "b997be57-c95b-419e-8946-2d482812c535")
+			(uuid "a69c696c-e171-4b77-98c4-1bf0529bb693")
 		)
 		(pin "67"
-			(uuid "a761d6cf-923e-4ba3-89e8-1885c3631598")
+			(uuid "8650b4e3-1dcf-4aed-bed6-d02e6ce4b637")
 		)
 		(pin "68"
-			(uuid "4900ac5d-29e9-4d59-810e-3da118cacc58")
+			(uuid "bc81dfdf-4a52-46eb-ac2e-648c43377c47")
 		)
 		(pin "69"
-			(uuid "5317c0df-5b3c-4d90-b576-f90ac6f86d1e")
+			(uuid "7ea5ac19-9d3e-4995-8c17-03ce50011ce9")
 		)
 		(pin "70"
-			(uuid "a144e89a-d619-41c5-814a-3a98601b0369")
+			(uuid "08206c32-7c4c-4ccc-aa6f-d25675848865")
 		)
 		(pin "71"
-			(uuid "de055e04-d8bd-4d5e-b4a5-5c14913abc65")
+			(uuid "7905b6fc-5fd7-450d-b5cd-f49536eedd10")
 		)
 		(pin "72"
-			(uuid "ebb342ee-7a14-462d-8fb8-feb38778327b")
+			(uuid "63a36ad2-0804-4164-aa37-5c9c11c871c4")
 		)
 		(pin "73"
-			(uuid "780effe5-7a59-4dfd-9450-6c0917f23417")
+			(uuid "d6781c8d-b905-4f31-a378-771f9b72b04d")
 		)
 		(pin "74"
-			(uuid "207c4dcb-3877-4a36-818b-b3c1bca43fdc")
+			(uuid "ca296fa6-ac77-4f02-96f2-62a9b1eaa2ca")
 		)
 		(pin "75"
-			(uuid "1b9586d1-067b-4e4d-918b-1291345244dd")
+			(uuid "db855aa5-dc4b-453d-971f-5dd35d7dd47d")
 		)
 		(pin "16"
 			(uuid "0d7e333c-327c-4407-888c-30d77a3dbfa6")
@@ -7869,94 +7555,24 @@
 		)
 		(instances
 			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "J18")
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/40e70cd3-eb78-4620-809b-438e2b4efd55"
+					(reference "J25")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Generic:P,E")
-		(at 172.72 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e5038e5-a239-44f0-8886-282de3fee04d")
-		(property "Reference" "#PWR0336"
-			(at 176.53 118.11 0)
-			(effects
-				(font
-					(size 2.54 2.54)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "P,E"
-			(at 176.53 121.92 0)
-			(effects
-				(font
-					(size 0.001 0.001)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 121.92 0)
-			(effects
-				(font
-					(size 2.54 2.54)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 121.92 0)
-			(effects
-				(font
-					(size 2.54 2.54)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "earth/ground/earthing/grounding (E)"
-			(at 172.72 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "0"
-			(uuid "63fda3a5-5154-43a1-a887-6c7274e50f35")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "#PWR0336")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Motor:Fan")
-		(at 143.51 104.775 90)
+		(lib_id "Elektuur_1:Re")
+		(at 120.65 97.79 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b6ea05c-6b23-4d7b-836d-3cbd84f72b80")
-		(property "Reference" "M2"
-			(at 142.2399 100.33 0)
+		(uuid "e55bf2fd-9f14-4f20-9390-a2ac02246a94")
+		(property "Reference" "Re13"
+			(at 119.3799 93.345 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7965,8 +7581,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Fan1"
-			(at 143.51 99.695 90)
+		(property "Value" "AC Compressor Control Relay"
+			(at 120.6499 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7974,7 +7590,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.256 104.775 0)
+			(at 120.65 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7982,8 +7598,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 143.256 104.775 0)
+		(property "Datasheet" ""
+			(at 120.65 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7991,726 +7607,73 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Fan"
-			(at 143.51 104.775 0)
+		(property "Description" "operating/relay device/coil; electromagnetic actuator (solenoid)"
+			(at 120.65 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "Sim.Pins" "1=1 2=2"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SPICE"
+			(at 120.65 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Params" "X"
+			(at 117.475 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Indicator" "+"
+			(at 117.475 99.06 0)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Rating" "V/Ω"
+			(at 123.825 98.425 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "268dc90e-ccab-4da7-8b3a-a56c217b599f")
 		)
 		(pin "2"
-			(uuid "714b17fe-e2ab-4fd4-a559-5594c122715a")
-		)
-		(pin "1"
-			(uuid "67bb5803-4b68-4be4-bfb6-33cc68149b2a")
+			(uuid "877efcc8-745e-4e42-8072-ab0a5095fc3b")
 		)
 		(instances
 			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "M2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun-Electromechanical:Relay_SPDT_20A_5V_27.6x32.0mm")
-		(at 156.21 99.695 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7ddc4d48-f8ef-4d27-9124-bcbbee064f02")
-		(property "Reference" "K3"
-			(at 156.21 84.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "1502"
-			(at 156.21 86.995 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "PCM_SparkFun-Electromechanical:Relay_SPDT_20A_27.6x32.0mm"
-			(at 156.21 113.665 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://cdn.sparkfun.com/datasheets/Components/General/Relay.JQX-15F.pdf"
-			(at 156.21 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5V DC Relay"
-			(at 156.21 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" "COMP-10736"
-			(at 156.21 121.285 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VCoil" "5VDC"
-			(at 172.72 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ICoil" "185mA"
-			(at 180.34 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VMax" "240VAC, 28VDC"
-			(at 177.8 99.695 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "IMax" "20A@240VAC, 20A@28VDC"
-			(at 181.61 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "29d45145-eee1-4442-b7b2-b5bd8784546b")
-		)
-		(pin "5"
-			(uuid "550acf15-6cc7-48e2-9217-6494c09ec823")
-		)
-		(pin "1"
-			(uuid "140a13c0-6879-444f-b3c1-23ecc2b7098d")
-		)
-		(pin "3"
-			(uuid "60b65ac2-d99e-41f6-94b4-fa4337fe0db6")
-		)
-		(pin "4"
-			(uuid "88ea571e-22ae-4730-a17d-6288025f84e1")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "K3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:PWR_12V")
-		(at 176.53 99.06 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "94a1a160-915b-4681-852f-5ff200058d6c")
-		(property "Reference" "#PWR0341"
-			(at 180.34 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_12V"
-			(at 172.72 99.0599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 176.53 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f5ff7f4c-9750-4d13-bc15-27101d3edb8c")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "#PWR0341")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:PWR_12V")
-		(at 116.205 102.235 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a84177f1-3cf3-4278-9133-666b6800bde1")
-		(property "Reference" "#PWR0342"
-			(at 120.015 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_12V"
-			(at 112.395 102.2349 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.205 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.205 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 116.205 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8b630f1-419d-4e9c-9ce0-bc0133083b5a")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "#PWR0342")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:PWR_12V")
-		(at 163.83 94.615 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b4944279-f614-4a90-8eb9-1ef42bee0caf")
-		(property "Reference" "#PWR0343"
-			(at 160.02 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_12V"
-			(at 167.005 94.6149 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 163.83 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 163.83 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40fa96c5-2bf2-4df3-a1fe-bcf86ac8c86a")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "#PWR0343")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun-Electromechanical:Relay_SPDT_20A_5V_27.6x32.0mm")
-		(at 125.095 97.155 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "d2bbb37d-6d10-4325-ab7e-171110b06579")
-		(property "Reference" "K2"
-			(at 125.095 81.915 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "1500A"
-			(at 125.095 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_SparkFun-Electromechanical:Relay_SPDT_20A_27.6x32.0mm"
-			(at 125.095 111.125 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://cdn.sparkfun.com/datasheets/Components/General/Relay.JQX-15F.pdf"
-			(at 125.095 113.665 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5V DC Relay"
-			(at 125.095 116.205 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" "COMP-10736"
-			(at 125.095 118.745 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VCoil" "5VDC"
-			(at 141.605 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ICoil" "185mA"
-			(at 149.225 94.615 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VMax" "240VAC, 28VDC"
-			(at 146.685 97.155 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "IMax" "20A@240VAC, 20A@28VDC"
-			(at 150.495 99.695 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a240c474-b8bf-4232-88ba-e70a04ac504e")
-		)
-		(pin "5"
-			(uuid "2a6f38b0-3820-4c50-a4d5-beee61842052")
-		)
-		(pin "1"
-			(uuid "e13f0b30-fe42-486c-952d-a6adb6af544b")
-		)
-		(pin "3"
-			(uuid "a3919053-a59e-43e2-ba29-99d2c234465f")
-		)
-		(pin "4"
-			(uuid "3bcd7d73-8186-49c7-931a-664afcc61ca6")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "K2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:PWR_12V")
-		(at 132.715 92.075 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "db01c9c8-bcbe-4096-b650-ff9eaeae65f7")
-		(property "Reference" "#PWR0340"
-			(at 128.905 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_12V"
-			(at 135.89 92.0749 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 132.715 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 132.715 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 132.715 92.075 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b25ccec2-c298-4b18-95ac-60e131c6a2fa")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "#PWR0340")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SparkFun-Electromechanical:Relay_SPDT_20A_5V_27.6x32.0mm")
-		(at 184.15 93.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e92bec28-855f-494c-b863-9a7f8b494205")
-		(property "Reference" "K4"
-			(at 184.15 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "1500B"
-			(at 184.15 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_SparkFun-Electromechanical:Relay_SPDT_20A_27.6x32.0mm"
-			(at 184.15 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://cdn.sparkfun.com/datasheets/Components/General/Relay.JQX-15F.pdf"
-			(at 184.15 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "5V DC Relay"
-			(at 184.15 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PROD_ID" "COMP-10736"
-			(at 184.15 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VCoil" "5VDC"
-			(at 200.66 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "ICoil" "185mA"
-			(at 208.28 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "VMax" "240VAC, 28VDC"
-			(at 205.74 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "IMax" "20A@240VAC, 20A@28VDC"
-			(at 209.55 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e5e1b2ff-2975-4393-8642-527cf8cfe4d4")
-		)
-		(pin "5"
-			(uuid "72b38d01-bcdb-4978-a745-5a273e4cf283")
-		)
-		(pin "1"
-			(uuid "5e266dec-d109-4920-85b7-bc7155c4126c")
-		)
-		(pin "3"
-			(uuid "fb1c67d7-54cf-4275-bfdb-3cd25fe8684d")
-		)
-		(pin "4"
-			(uuid "d2f0b331-bccf-4c69-b853-0c82c8128582")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "K4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "fab:PWR_12V")
-		(at 191.77 88.9 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ec99d200-258b-414c-aab8-885d0a491ece")
-		(property "Reference" "#PWR0344"
-			(at 187.96 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_12V"
-			(at 194.945 88.8999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 191.77 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 191.77 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "12fa3fc1-5d08-4218-ab99-ecf5f7f34cf2")
-		)
-		(instances
-			(project "peugeot-ecu"
-				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81"
-					(reference "#PWR0344")
+				(path "/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/40e70cd3-eb78-4620-809b-438e2b4efd55"
+					(reference "Re13")
 					(unit 1)
 				)
 			)

@@ -306,10 +306,6 @@
         ""
       ],
       [
-        "power_pin_not_driven|1670050|393700|bbacab5b-19d4-4055-bebe-9ab0d5931bdf|00000000-0000-0000-0000-000000000000|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/a127a5d6-6c66-4e6e-a6cf-a30422c17476|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/a127a5d6-6c66-4e6e-a6cf-a30422c17476|",
-        ""
-      ],
-      [
         "power_pin_not_driven|1708150|774700|804ba1ce-69fa-47e9-adc4-f1de0718e547|00000000-0000-0000-0000-000000000000|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/27ccb5d1-d137-4a26-9f50-be3c0586ca2d|/da96cc1d-20c0-47ba-9881-2a73783a20fb/c36ea827-795f-4bf9-a134-98e0d2d2efe7/de3a9c16-5d2b-45b7-8fbc-12845a2597d0/27ccb5d1-d137-4a26-9f50-be3c0586ca2d|",
         ""
       ]
@@ -1284,7 +1280,7 @@
     ],
     [
       "79d80a34-3aeb-4ec3-81d0-1ae41d5e7d81",
-      "fan_control_AC"
+      "fan_control"
     ],
     [
       "900820c3-35b4-478e-a831-d51193b40c2c",
@@ -1292,7 +1288,7 @@
     ],
     [
       "a127a5d6-6c66-4e6e-a6cf-a30422c17476",
-      "TAMP_sensor"
+      "tmap_sensor"
     ],
     [
       "213078c7-7dab-4bbc-82d0-5c6c62997afa",
@@ -1329,6 +1325,10 @@
     [
       "760caca6-0434-4fc6-bcd4-d6cc4df6fd99",
       "speed_sensor"
+    ],
+    [
+      "40e70cd3-eb78-4620-809b-438e2b4efd55",
+      "air_conditioner"
     ]
   ],
   "text_variables": {}

@@ -6,6 +6,9 @@
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:R_Variable"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)

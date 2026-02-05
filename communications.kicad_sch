@@ -5659,287 +5659,7 @@
 			2.54 2.54 2.54
 		)
 		(cells
-			(table_cell "TMAP sensor Signal1"
-				(exclude_from_sim no)
-				(at 239.268 68.453 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "89354454-7397-4b3f-8aec-9af504bec624")
-			)
-			(table_cell "TMAP sensor Supply"
-				(exclude_from_sim no)
-				(at 239.268 70.993 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "3111f247-826c-40c0-bfaf-ab78312fc3d6")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 73.533 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "c6f07ed8-a151-408e-a5e0-bd7555d9c3e7")
-			)
-			(table_cell "Fuel Type Indication Lamp (DO LO)"
-				(exclude_from_sim no)
-				(at 239.268 76.073 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "9596457a-9645-430b-90d4-0974d096765a")
-			)
-			(table_cell "FAN LOW (DO LO) ? ACAlso"
-				(exclude_from_sim no)
-				(at 239.268 78.613 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "8160384b-a440-43ee-879d-69d997d34aad")
-			)
-			(table_cell "Upstream Oxygen Sensor Signal(+)"
-				(exclude_from_sim no)
-				(at 239.268 81.153 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "5d762cd5-5272-430c-8f6c-3bbe0237b392")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 83.693 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "e05352f8-3d27-4f6a-b32d-440637a777e9")
-			)
-			(table_cell "Immobilizer (R-Line) (LIN)"
-				(exclude_from_sim no)
-				(at 239.268 86.233 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "42b7e29a-6864-464c-a028-08141fbb849e")
-			)
-			(table_cell "FTL_PWM"
-				(exclude_from_sim no)
-				(at 239.268 88.773 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "dd0e5767-7d96-48bd-b36d-a7343bd4f286")
-			)
-			(table_cell "ESS"
-				(exclude_from_sim no)
-				(at 239.268 91.313 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "1eea2675-7ab8-4943-add5-150a23bc7944")
-			)
-			(table_cell "NC"
-				(exclude_from_sim no)
-				(at 239.268 93.853 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "73c69ff8-e6ea-4180-8a8b-ed749ea8645c")
-			)
-			(table_cell "Gasoline Injector (1.0)(Cyl3)"
-				(exclude_from_sim no)
-				(at 239.268 96.393 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "0a9014a3-b12e-48a0-9813-e00f177b80bf")
-			)
-			(table_cell "Gasoline Injector (1.0)(Cyl1)"
-				(exclude_from_sim no)
-				(at 239.268 98.933 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "2827d025-9dae-4e61-a4bb-747daeb1d5cc")
-			)
-			(table_cell "Gas Injector (HD)(1.0)(Cyl3)"
-				(exclude_from_sim no)
-				(at 239.268 101.473 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "fccb8337-c1de-4568-8a71-e9bf2b8e5dcd")
-			)
-			(table_cell "Gas Injector (HD)(1.0)(Cyl1)"
-				(exclude_from_sim no)
-				(at 239.268 104.013 0)
-				(size 42.545 2.54)
-				(margins 0.9525 0.9525 0.9525 0.9525)
-				(span 1 1)
-				(fill
-					(type none)
-				)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-				(uuid "21da56c8-570f-4cb0-b05a-0d7dde46852d")
-			)
-		)
-	)
-	(table
-		(column_count 1)
-		(border
-			(external yes)
-			(header yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(separators
-			(rows yes)
-			(cols yes)
-			(stroke
-				(width 0)
-				(type solid)
-			)
-		)
-		(column_widths 42.545)
-		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54
-			2.54 2.54 2.54
-		)
-		(cells
-			(table_cell "CAN2_LOW"
+			(table_cell "CAN_LOW"
 				(exclude_from_sim no)
 				(at 239.268 109.093 0)
 				(size 42.545 2.54)
@@ -5956,7 +5676,7 @@
 				)
 				(uuid "b840414e-caf5-4bee-9ee0-62b0c5d7137e")
 			)
-			(table_cell "CAN2_HIGH"
+			(table_cell "CAN_HIGH"
 				(exclude_from_sim no)
 				(at 239.268 111.633 0)
 				(size 42.545 2.54)
@@ -6753,6 +6473,286 @@
 					(justify left)
 				)
 				(uuid "3efd875e-2025-41bc-84b4-e669e12d1b91")
+			)
+		)
+	)
+	(table
+		(column_count 1)
+		(border
+			(external yes)
+			(header yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(separators
+			(rows yes)
+			(cols yes)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+		)
+		(column_widths 42.545)
+		(row_heights 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54 2.54
+			2.54 2.54 2.54
+		)
+		(cells
+			(table_cell "TMAP sensor Signal1"
+				(exclude_from_sim no)
+				(at 239.268 68.453 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "89354454-7397-4b3f-8aec-9af504bec624")
+			)
+			(table_cell "TMAP sensor Supply"
+				(exclude_from_sim no)
+				(at 239.268 70.993 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "3111f247-826c-40c0-bfaf-ab78312fc3d6")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 73.533 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "c6f07ed8-a151-408e-a5e0-bd7555d9c3e7")
+			)
+			(table_cell "Fuel Type Indication Lamp (DO LO)"
+				(exclude_from_sim no)
+				(at 239.268 76.073 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "9596457a-9645-430b-90d4-0974d096765a")
+			)
+			(table_cell "FAN LOW (DO LO) ? ACAlso"
+				(exclude_from_sim no)
+				(at 239.268 78.613 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "8160384b-a440-43ee-879d-69d997d34aad")
+			)
+			(table_cell "Upstream Oxygen Sensor Signal(+)"
+				(exclude_from_sim no)
+				(at 239.268 81.153 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "5d762cd5-5272-430c-8f6c-3bbe0237b392")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 83.693 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "e05352f8-3d27-4f6a-b32d-440637a777e9")
+			)
+			(table_cell "Immobilizer (L-Line) (LIN)"
+				(exclude_from_sim no)
+				(at 239.268 86.233 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "42b7e29a-6864-464c-a028-08141fbb849e")
+			)
+			(table_cell "FTL_PWM"
+				(exclude_from_sim no)
+				(at 239.268 88.773 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "dd0e5767-7d96-48bd-b36d-a7343bd4f286")
+			)
+			(table_cell "ESS"
+				(exclude_from_sim no)
+				(at 239.268 91.313 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "1eea2675-7ab8-4943-add5-150a23bc7944")
+			)
+			(table_cell "NC"
+				(exclude_from_sim no)
+				(at 239.268 93.853 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "73c69ff8-e6ea-4180-8a8b-ed749ea8645c")
+			)
+			(table_cell "Gasoline Injector (1.0)(Cyl3)"
+				(exclude_from_sim no)
+				(at 239.268 96.393 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "0a9014a3-b12e-48a0-9813-e00f177b80bf")
+			)
+			(table_cell "Gasoline Injector (1.0)(Cyl1)"
+				(exclude_from_sim no)
+				(at 239.268 98.933 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "2827d025-9dae-4e61-a4bb-747daeb1d5cc")
+			)
+			(table_cell "Gas Injector (HD)(1.0)(Cyl3)"
+				(exclude_from_sim no)
+				(at 239.268 101.473 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "fccb8337-c1de-4568-8a71-e9bf2b8e5dcd")
+			)
+			(table_cell "Gas Injector (HD)(1.0)(Cyl1)"
+				(exclude_from_sim no)
+				(at 239.268 104.013 0)
+				(size 42.545 2.54)
+				(margins 0.9525 0.9525 0.9525 0.9525)
+				(span 1 1)
+				(fill
+					(type none)
+				)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+				(uuid "21da56c8-570f-4cb0-b05a-0d7dde46852d")
 			)
 		)
 	)
